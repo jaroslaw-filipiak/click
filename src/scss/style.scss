@@ -7,125 +7,15 @@ Description: click5 Interactive WordPress Theme
 Version: 3.0.13
 */
 
-@import './layout/navigation';
+@import './base/typography';
+@import './components/header';
+@import './components/hero';
 
 :root {
-    --main: #929292;
+    --main: #00aee1;
+    --darkblue: #10173c;
 }
 
-/* HEADER ww*/
-
-#header {
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 65px;
-    padding-right: 60px;
-    background-color: #FFF;
-    transition: all .3s;
-}
-#header.hello-bar {
-    top: 39px;
-}
-#header.sticky {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .05);
-}
-
-#header .logo a {
-    color: #000;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 100%;
-    letter-spacing: 0;
-    padding: 0;
-    margin: 0;
-}
-
-#header .phone {
-    padding: 18px 0 18px 25px;
-    border-left: 1px solid #e4e4e4;
-}
-#header .phone a {
-    position: relative;
-    display: inline-block;
-    color: #000;
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.46px;
-    padding: 2px 0 3px 0;
-    margin: 0;
-    border-bottom: 2px solid transparent;
-}
-#header .phone a i {
-    position: relative;
-    color: var(--main);
-    font-size: 16px;
-    padding-right: 5px;
-    top: -2px;
-}
-#header .phone a:hover {
-    text-decoration: none;
-    border-color: #929292;
-}
-
-#header .contact a {
-    display: inline-block;
-    height: 53px;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: -0.18px;
-    padding: 0 30px;
-    margin: 0 0 0 25px;
-    background-color: var(--main);
-    border: 2px solid var(--main);
-    border-radius: 30px;
-}
-#header .contact a:hover {
-    color: var(--main);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-/* HERO */
-
-#hero {
-    position: relative;
-    height: 580px;
-    padding-bottom: 220px;
-    background-color: #C5C5C5;
-    background-size: cover;
-    background-position: top center;
-    z-index: 4;
-}
-
-#hero h3 {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0 0 30px 0;
-    margin: 0;
-}
-#hero h1 {
-    color: #FFF;
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 65px;
-    letter-spacing: -1.5px;
-    padding: 0;
-    margin: 0;
-}
-#hero h1 span {
-    color: var(--orange);
-    border-bottom: 4px solid var(--orange);
-}
 
 /* BANNERS */
 

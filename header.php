@@ -5,7 +5,7 @@
  */
 
 if (!defined('ABSPATH')) {
-	exit;
+    exit;
 }
 
 $theme_uri = get_template_directory_uri();
@@ -72,17 +72,17 @@ $logo = get_field('logo', 'options');
                     </button>
 
                     <?php wp_nav_menu(
-						array(
-							'theme_location'  => 'primary',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id'    => 'navbarNavDropdown',
-							'menu_class'      => 'navbar-nav ml-auto',
-							'fallback_cb'     => '',
-							'menu_id'         => 'main-menu',
-							'depth'           => 3,
-							'walker'          => new click5_WP_Bootstrap_Navwalker(),
-						)
-					); ?>
+                        array(
+                            'theme_location'  => 'primary',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id'    => 'navbarNavDropdown',
+                            'menu_class'      => 'navbar-nav ml-auto',
+                            'fallback_cb'     => '',
+                            'menu_id'         => 'main-menu',
+                            'depth'           => 3,
+                            'walker'          => new click5_WP_Bootstrap_Navwalker(),
+                        )
+                    ); ?>
                 </nav>
 
                 <div class="phone">
@@ -92,17 +92,19 @@ $logo = get_field('logo', 'options');
                     </a>
                 </div>
 
-                <div class="quote">
-                    <a href="">
-                        Get A Free Quote
-                    </a>
-                </div>
+                <div class="cta__buttons d-none d-xl-flex align-items-center justify-content-center ">
+                    <div class="quote">
+                        <a href="">
+                            Get A Free Quote
+                        </a>
+                    </div>
 
-                <div class="schedule">
-                    <a href="">
-                        Schedule Service
-                    </a>
-                </div>
+                    <div class="schedule">
+                        <a href="">
+                            Schedule Service
+                        </a>
+                    </div>
 
+                </div>
             </div>
         </header>

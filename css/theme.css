@@ -69,13 +69,13 @@ p, ul li, ol li {
     margin: 2px 21px 0 0;
 }
 .navbar .navbar-nav > li {
-    margin: 0 15px;
+    margin: 0 10px;
     transition: all .5s;
 }
 .navbar .navbar-nav .nav-link {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
+    color: #10173c;
+    font-size: 18.5px;
+    font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.18px;
     padding: 0 0 3px 0;
@@ -85,6 +85,7 @@ p, ul li, ol li {
 .navbar .navbar-nav [class*="current"] .nav-link,
 .navbar .navbar-nav .menu-item:hover .nav-link {
     border-color: var(--main);
+    border-width: 2px;
 }
 .navbar .navbar-nav .dropdown a {
     padding-right: 15px;

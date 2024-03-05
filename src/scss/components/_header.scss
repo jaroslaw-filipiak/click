@@ -1,0 +1,113 @@
+/* HEADER*/
+#header {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 65px;
+    padding-right: 60px;
+    background-color: #FFF;
+    transition: all .3s;
+}
+
+#header.hello-bar {
+    top: 39px;
+}
+#header.sticky {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .05);
+}
+
+#header .logo a {
+    color: #000;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#header .phone {
+    padding: 18px 0 18px 25px;
+    border-left: 1px solid #e4e4e4;
+}
+#header .phone a {
+    position: relative;
+    display: inline-block;
+    color: var(--darkblue);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.46px;
+    padding: 2px 0 3px 0;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+}
+#header .phone a i {
+    position: relative;
+    color: var(--main);
+    font-size: 16px;
+    padding-right: 1px;
+    top: 1px;
+}
+#header .phone a:hover {
+    text-decoration: none;
+    border-color: var(--main);
+}
+
+#header .contact a {
+    display: inline-block;
+    height: 53px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: -0.18px;
+    padding: 0 30px;
+    margin: 0 0 0 25px;
+    background-color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 30px;
+}
+#header .contact a:hover {
+    color: var(--main);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#header {
+
+    .cta__buttons {
+        gap: 8px;
+    }
+
+    .quote,
+    .schedule {
+        a {
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 17px 23px;
+            border-radius: 3px;
+            border: 1px solid var(--main);
+            &:hover {
+                text-decoration: none;
+            } 
+        }
+    }
+
+    .quote a {
+        margin-left: 22px;
+        color: var(--darkblue);
+    }
+
+    .schedule a {
+        background-color: var(--main);
+        color: #fff;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
