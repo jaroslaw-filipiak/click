@@ -7,6 +7,9 @@
 if (!defined('ABSPATH')) {
 	exit;
 }
+
+$theme_uri = get_template_directory_uri();
+$logo = get_field('logo', 'options');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -47,7 +50,15 @@ if (!defined('ABSPATH')) {
 
             <div class="logo">
                 <a rel="home" href="<?php echo esc_url(home_url('/')); ?>"
-                    title="<?php echo esc_attr(get_bloginfo('name')); ?>" itemprop="url">Logo</a>
+                    title="<?php echo esc_attr(get_bloginfo('name')); ?>" itemprop="url">
+                    <?php if (!empty($logo)) : ?>
+                    <img loading="lazy" src="<?php echo esc_url($logo['url']); ?>"
+                        alt="<?php echo esc_attr($logo['alt']); ?>" />
+                    <?php else : ?>
+                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/logo.webp"
+                        alt="NextGen Mechanical logo">
+                    <?php endif;  ?>
+                </a>
             </div>
 
             <div class="navigation d-flex justify-content-end align-items-center">
