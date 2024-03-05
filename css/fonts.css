@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Montserrat-Bold.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/GellixThin.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/GellixLight.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/GellixRegular.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/GellixMedium.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/GellixSemiBold.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/GellixBold.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/GellixExtraBold.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gellix';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/GellixBlack.otf');
+    font-display: swap;
+}
