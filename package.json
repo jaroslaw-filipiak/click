@@ -1,0 +1,17 @@
+{
+  "name": "click5-wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style compressed -o . src/scss",
+    "watch": "nodemon -w src/scss --ext scss --exec \"build styles...\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
