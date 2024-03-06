@@ -85,7 +85,7 @@ p, ul li, ol li {
 .navbar .navbar-nav [class*="current"] .nav-link,
 .navbar .navbar-nav .menu-item:hover .nav-link {
     border-color: var(--main);
-    border-width: 2px;
+    border-width: px;
 }
 .navbar .navbar-nav .dropdown a {
     padding-right: 15px;
@@ -729,76 +729,19 @@ p, ul li, ol li {
     left: 0;
 }
 
-/* FOOTER */
 
-#footer {
-    background-color: #222;
-}
-
-#footer small {
-    display: block;
-    padding-top: 3px;
-    font-size: 12px;
-}
-
-#footer a {
-    text-decoration: none;
-    padding: 0;
-}
-
-#footer .menu ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#footer .menu ul li {
-    position: relative;
-    float: left;
-    background: none;
-    padding: 0 16px 0 15px;
-}
-#footer .menu ul li:before {
-    display: none;
-}
-#footer .menu ul li:after {
-    content: '|';
-    color: rgba(255, 255, 255, .5);
-    position: absolute;
-    right: -1px;
-    top: 0;
-}
-#footer .menu ul li:first-child {
-    padding-left: 0;
-}
-#footer .menu ul li:last-child {
-    padding-right: 0;
-}
-#footer .menu ul li:last-child:after {
-    display: none;
-}
-#footer .menu ul li a {
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 0;
-    padding: 0;
-    margin: 0;
-}
-#footer .menu ul li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
 
 .copy p {
-    color: #787878;
-    font-size: 15px;
-    font-weight: 400;
+    color: #fff;
+    opacity: .4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 100%;
     letter-spacing: 0.15px;
     padding: 0;
     margin: 16px 0 0 0;
+    -webkit-font-smoothing: antialiased
 }
 
 .copy a:hover span {

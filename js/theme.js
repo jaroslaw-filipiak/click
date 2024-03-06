@@ -149,5 +149,31 @@ jQuery(function($){
 				}
 			]
 		});
+
+		if('#logos') {
+			$("#logos .logos__slick").slick({
+				infinite: true,
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: false,
+				responsive: [
+					{
+						breakpoint: 1499,
+						settings: {
+							  arrows: false
+						}
+					},
+					{
+						breakpoint: 991,
+						settings: {
+							slidesToShow: 3,
+							  arrows: false
+						}
+					}
+				]
+			});
+		}
+
     });
 });

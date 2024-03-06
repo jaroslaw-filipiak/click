@@ -1,35 +1,86 @@
 /* HERO */
 
-#hero {
+.hero {
     position: relative;
-    height: 580px;
+    height: 775px;
     padding-bottom: 220px;
     background-color: #C5C5C5;
     background-size: cover;
     background-position: top center;
     z-index: 4;
+
+    h1, h2, h3, h4  {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 61.85px;
+        line-height: 68px;
+        font-weight: 700;
+        color: #fff;
+        max-width: 680px;
+        padding-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 23px;
+        font-weight: 300;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 26px;
+        font-weight: 300;
+        color: #fff;
+
+        span {
+            color: #facb10;
+        }
+    }
+
+    &__buttons {
+        margin-top: 34px;
+
+       
+
+        a {
+            margin: 0px 4px;
+            display: block;
+            padding: 20px 30px;
+            font-size: 21px;
+            font-weight: 500;
+            width: 294px;
+            border-radius: 4px;
+            text-align: center;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+
+        &--schedule {
+            background-color: var(--main);
+            color:#fff;
+
+            &:hover 
+            {
+                color: #fff;
+            }
+        }
+
+        &--call {
+            background-color:#fff;
+            color: #161616;
+
+            span {
+                color: var(--main);
+            }
+        }
+
+    }
 }
 
-#hero h3 {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0 0 30px 0;
-    margin: 0;
-}
-#hero h1 {
-    color: #FFF;
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 65px;
-    letter-spacing: -1.5px;
-    padding: 0;
-    margin: 0;
-}
-#hero h1 span {
-    color: var(--orange);
-    border-bottom: 4px solid var(--orange);
-}
+
+

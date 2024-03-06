@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass --output-style compressed -o . src/scss",
-    "watch": "nodemon -w src/scss --ext scss --exec \"build styles...\""
+    "watch": "nodemon -w src/scss --ext scss --exec \"build styles...\"",
+    "watch:sass": "node-sass --watch src/scss -o ./ --output-style compressed"
+   
   },
   "keywords": [],
   "author": "",

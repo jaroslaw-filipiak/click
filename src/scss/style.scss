@@ -10,111 +10,24 @@ Version: 3.0.13
 @import './base/typography';
 @import './components/header';
 @import './components/hero';
+@import './components/banners';
+@import './components/navbar';
+@import './components/services';
+@import './components/services-area';
+@import './components/our-priority';
+@import './components/peace-of-mind';
+@import './components/logos';
+@import './components/ftl';
+@import './components/reviews';
+
+@import './layout/footer';
 
 :root {
     --main: #00aee1;
     --darkblue: #10173c;
-}
-
-
-/* BANNERS */
-
-#banners {
-    position: relative;
-    margin-top: -75px;
-}
-#banners::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #f8f9fa;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-.page-template-contact #banners::before {
-    display: none;
-}
-
-#banners .box {
-    position: relative;
-    z-index: 9;
-}
-#banners .box a {
-    position: relative;
-    padding: 40px 65px;
-    background-color: #FFF;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, .05);
-    cursor: pointer;
-}
-#banners .box.box-1 a {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-}
-#banners .box.box-2 a {
-    background-color: var(--main);
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-#banners .box a:hover {
-    text-decoration: none;
-}
-#banners .box a::after {
-    content: "→";
-    color: #000;
-    font-family: "Arial";
-    font-size: 24px;
-    position: absolute;
-    right: 50px;
-    transition: all .3s;
-}
-#banners .box.box-2 a::after {
-    color: #FFF;
-}
-#banners .box a:hover::after {
-    right: 35px;
-}
-
-#banners .box .icon {
-    padding-right: 40px;
-}
-#banners .box .icon img {
-    transition: all .3s;
-}
-#banners .box.box-2 .icon img {
-    filter: brightness(0) invert(1);
-}
-#banners .box a:hover .icon img {
-    transform: rotate(-10deg);
-}
-
-#banners .box .content h3 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    padding: 0 0 6px 0;
-    margin: 0;
-}
-#banners .box.box-2 .content h3 {
-    color: rgba(255, 255, 255, .8);
-}
-#banners .box .content p {
-    color: #000;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -0.6px;
-    padding: 0;
-    margin: 0;
-}
-#banners .box.box-2 .content p span {
-    color: #FFF;
-    font-weight: 500;
+    --darkblue2: #0d1744;
+    --lightblue: #1a265c;
+    --lightBG: #ecf4f7;
 }
 
 /* ABOUT */
@@ -578,80 +491,7 @@ Version: 3.0.13
     border-color: var(--main);
 }
 
-/* REVIEWS */
 
-#reviews {
-    position: relative;
-}
-
-#reviews .reviews {
-    margin-top: 20px;
-}
-
-#reviews .slick-track {
-    display: flex !important;
-}
-
-#reviews .review {
-    height: inherit !important;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-#reviews .review .content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 70px 60px 50px 65px;
-    background-color: #f9f9f9;
-}
-
-#reviews .review .content .opinion {
-    flex: 1;
-}
-#reviews .review .content .opinion p {
-    position: relative;
-    color: #282828;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 31px;
-    letter-spacing: -0.19px;
-    text-indent: 65px;
-    padding: 0;
-    margin: 0;
-}
-#reviews .review .content .opinion p:first-of-type::before {
-    content: '“';
-    color: var(--main);
-    font-family: "Montserrat";
-    font-size: 150px;
-    font-weight: 700;
-    position: absolute;
-    top: 18px; left: -85px;
-}
-
-#reviews .review .content .overview p {
-    position: relative;
-    color: #282828;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 100%;
-    letter-spacing: -0.18px;
-    padding: 0;
-    margin: 0;
-}
-#reviews .review .content .overview p strong {
-    font-weight: 600;
-}
-#reviews .review .content .overview p::before {
-    content: "";
-    display: block;
-    width: 110px;
-    height: 10px;
-    margin-top: 27px;
-    margin-bottom: 25px;
-    background-color: var(--main);
-    border-radius: 10px;
-}
 
 /* SUBPAGES */
 
