@@ -38,17 +38,24 @@ $theme_uri = get_template_directory_uri();
     </div>
 </section>
 
+
 <!-- services -->
 <section>
     <div class="wrapper services" id="services">
         <div class="container-fluid mx-auto">
             <div class="row">
                 <div class="col text-center">
-                    <h5>Our Services</h5>
+                    <h5>Our Services </h5>
                     <h3>Comprehensive HVAC Services You Can Trust</h3>
                 </div>
             </div>
             <div class="row mx-auto services__items-wrapper">
+
+                <?php
+
+                $services = get_field('repeater_field_name');
+
+                ?>
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                 <div class="services-item p-0">
                     <div class="services-item__header border"
@@ -68,13 +75,13 @@ $theme_uri = get_template_directory_uri();
                 </div>
                 <?php } ?>
             </div>
-            <div class="row services__cta">
+            <div class="row cta" id="cta">
                 <div class="col-12 text-center">
                     <h3>Questions? <span> Contact Us Today!</span></h3>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center mt-2">
-                    <a class="services__cta--schedule-btn" href="#">Schedule Service</a>
-                    <a class="services__cta--call-btn" href="">Call
+                    <a class="cta--schedule-btn" href="#">Schedule Service</a>
+                    <a class="cta--call-btn" href="">Call
                         <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                 </div>
             </div>
@@ -212,7 +219,6 @@ $theme_uri = get_template_directory_uri();
     </div>
 </section>
 
-
 <!-- TODO: d-none, cleanup while refactor -->
 <section>
     <?php if (have_rows("services_items")) : ?>
@@ -298,7 +304,6 @@ $theme_uri = get_template_directory_uri();
         </div>
     </div>
 </section>
-
 
 <section>
     <?php if (!is_page(117) && have_rows("reviews", 117)) : ?>

@@ -1,0 +1,50 @@
+#cta,
+.cta {
+  margin-top: 60px;
+  h3 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #1a265c;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &--schedule-btn,
+  &--call-btn {
+    width: 295px;
+    height: 66px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 4px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--schedule-btn {
+    background-color: var(--lightblue);
+    color: #fff;
+    border: 1px solid var(--lightblue);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &--call-btn {
+    background-color: #fff;
+    color: var(--darkblue);
+    border: 1px solid var(--main);
+
+    span {
+      color: var(--main);
+    }
+  }
+}

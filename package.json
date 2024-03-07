@@ -7,13 +7,15 @@
     "build": "node-sass --output-style compressed -o . src/scss",
     "watch": "nodemon -w src/scss --ext scss --exec \"build styles...\"",
     "watch:sass": "node-sass --watch src/scss -o ./ --output-style compressed"
-   
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    // "@wordpress/prettier-config": "^3.10.0",
     "node-sass": "^9.0.0",
-    "nodemon": "^3.1.0"
-  }
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  },
+  // "prettier": "@wordpress/prettier-config"
 }

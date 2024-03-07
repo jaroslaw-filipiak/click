@@ -1,0 +1,139 @@
+/* CONTACT */
+
+#contact-intro {
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+#contact-intro .box {
+  display: flex;
+  padding-left: 55px;
+}
+#contact-intro .box:first-of-type {
+  padding-left: 150px;
+}
+
+#contact-intro .box .icon {
+  width: 60px;
+}
+
+#contact-intro .box .content {
+  width: calc(100% - 60px);
+  padding-left: 30px;
+}
+#contact-intro .box .content h2 {
+  color: #252525;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.34px;
+  padding: 15px 0 35px 0;
+  margin: 0;
+}
+#contact-intro .box .content address,
+#contact-intro .box .content p {
+  color: #555;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.57px;
+  padding: 0;
+  margin: 0;
+}
+#contact-intro .box .content a.directions {
+  display: inline-block;
+  color: var(--main);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.54px;
+  padding: 0 0 1px 0;
+  margin: 6px 0 0 0;
+  border-bottom: 1px solid var(--main);
+}
+#contact-intro .box .content a.directions:hover {
+  text-decoration: none;
+  border-color: transparent;
+}
+#contact-intro .box .content a.phone {
+  display: inline-block;
+  color: var(--main);
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1.17px;
+  padding: 0 0 1px 0;
+  margin: 0;
+  border-bottom: 2px solid transparent;
+}
+#contact-intro .box .content a.phone:hover {
+  text-decoration: none;
+  border-color: var(--main);
+}
+
+#contact-wrapper {
+  h1 {
+    font-size: 37px;
+    color: var(--darkblue2);
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 129px;
+      height: 3px;
+      background-color: var(--main);
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  h4 {
+    padding-top: 7px;
+    color: #3a4054;
+    font-size: 20px;
+    max-width: 800px;
+  }
+
+  .form-row {
+    // gap: 15px;
+    // flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .form-group--textarea {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-row > .col,
+  .form-row > [class*='col-'] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
+
+#contact-wrapper .form {
+  margin-top: 20px;
+}
+
+#contact-wrapper .form .wpcf7 {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.contact-map {
+  font-size: 0;
+}
+.contact-map iframe {
+  filter: grayscale(100%);
+}

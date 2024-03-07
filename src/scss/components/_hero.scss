@@ -1,86 +1,142 @@
 /* HERO */
 
 .hero {
-    position: relative;
-    height: 775px;
-    padding-bottom: 220px;
-    background-color: #C5C5C5;
-    background-size: cover;
-    background-position: top center;
-    z-index: 4;
+  position: relative;
+  height: 775px;
+  padding-bottom: 220px;
+  background-color: #c5c5c5;
+  background-size: cover;
+  background-position: top center;
+  z-index: 4;
 
-    h1, h2, h3, h4  {
-        padding: 0;
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 61.85px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 680px;
+    padding-bottom: 24px;
+  }
+
+  h3 {
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__buttons {
+    margin-top: 34px;
+
+    a {
+      margin: 0px 4px;
+      display: block;
+      padding: 20px 30px;
+      font-size: 21px;
+      font-weight: 700;
+      width: 294px;
+      border-radius: 4px;
+      text-align: center;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
-    h1 {
-        font-size: 61.85px;
-        line-height: 68px;
-        font-weight: 700;
+    &--schedule {
+      background-color: var(--main);
+      color: #fff;
+      border: 1px solid var(--main);
+
+      &:hover {
         color: #fff;
-        max-width: 680px;
-        padding-bottom: 24px;
+        background-color: #fff;
+        color: var(--darkblue);
+        border: 1px solid var(--main);
+      }
     }
 
-    h3 {
-        font-size: 23px;
-        font-weight: 300;
-        color: #fff;
-        padding-bottom: 20px;
-    }
+    &--call {
+      background-color: #fff;
+      color: #161616;
+      border: 1px solid #fff;
 
-    h4 {
-        font-size: 26px;
-        font-weight: 300;
+      span {
+        color: var(--main);
+        transition: all 0.3s;
+      }
+      &:hover {
         color: #fff;
+        background-color: var(--main);
+        color: #fff;
+        border: 1px solid var(--main);
 
         span {
-            color: #facb10;
+          color: #fff;
         }
+      }
     }
-
-    &__buttons {
-        margin-top: 34px;
-
-       
-
-        a {
-            margin: 0px 4px;
-            display: block;
-            padding: 20px 30px;
-            font-size: 21px;
-            font-weight: 500;
-            width: 294px;
-            border-radius: 4px;
-            text-align: center;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-
-        &--schedule {
-            background-color: var(--main);
-            color:#fff;
-
-            &:hover 
-            {
-                color: #fff;
-            }
-        }
-
-        &--call {
-            background-color:#fff;
-            color: #161616;
-
-            span {
-                color: var(--main);
-            }
-        }
-
-    }
+  }
 }
 
+/* HERO SUB */
 
+#hero-sub {
+  .btn {
+    font-size: 21px;
+    padding: 20px 60px;
+    width: 295px;
+    margin-right: 13px;
+  }
 
+  h1 {
+    color: #fff;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.6px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 23px;
+    color: #fff;
+    max-width: 610px;
+    margin: 10px 0px 24px 0px;
+
+    &--contact {
+      font-size: 26px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// CONTACT PAGE
+.page-template-contact {
+  #hero-sub {
+    height: 670px;
+    .title--contact {
+      font-size: 66px;
+    }
+  }
+}
