@@ -22,7 +22,7 @@
   &__items-wrapper {
     padding-top: 62px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 25px;
   }
@@ -63,6 +63,10 @@
       -webkit-box-shadow: 10px 13px 14px -7px rgba(233, 243, 247, 1);
       -moz-box-shadow: 10px 13px 14px -7px rgba(233, 243, 247, 1);
       box-shadow: 10px 13px 14px -7px rgba(233, 243, 247, 1);
+
+      img {
+        max-width: 67px;
+      }
     }
 
     &__body {

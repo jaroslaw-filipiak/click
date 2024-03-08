@@ -277,6 +277,27 @@
                     "parent_repeater": "field_61f274eeadd3b"
                 },
                 {
+                    "key": "field_65e9e27f28faf",
+                    "label": "Excerpt",
+                    "name": "excerpt",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_61f274eeadd3b"
+                },
+                {
                     "key": "field_61f27525add40",
                     "label": "Learn More (URL)",
                     "name": "url",
@@ -297,6 +318,32 @@
                     "allow_archives": 0,
                     "multiple": 0,
                     "allow_null": 0,
+                    "parent_repeater": "field_61f274eeadd3b"
+                },
+                {
+                    "key": "field_65e9d78939a3e",
+                    "label": "bg",
+                    "name": "bg",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": 700,
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
                     "parent_repeater": "field_61f274eeadd3b"
                 }
             ],
@@ -354,7 +401,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "id",
+                    "return_format": "array",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -364,6 +411,27 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "thumbnail",
+                    "parent_repeater": "field_63f7109ce9fff"
+                },
+                {
+                    "key": "field_65eac6f9ae5c4",
+                    "label": "Pre Title",
+                    "name": "pre_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
                     "parent_repeater": "field_63f7109ce9fff"
                 },
                 {
@@ -427,6 +495,156 @@
                 }
             ],
             "rows_per_page": 20
+        },
+        {
+            "key": "field_65eaebc650cbb",
+            "label": "FTL section",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65eaebd850cbc",
+            "label": "Pre Title",
+            "name": "ftl_pre_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "11Special Financing With FTL",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65eaebfe50cbd",
+            "label": "Title",
+            "name": "ftl_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "11Special Offers and <\/br>Financing for Your Comfort",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65eaec2350cbe",
+            "label": "Text",
+            "name": "ftl_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Is money tight? Do you need financial assistance with your HVAC services? Regardless of your                         credit score, we have you covered. Our partnership with FTL provides loans from 3 months to 120 months. We also offer repair service financing for your peace of mind.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65eaec6250cbf",
+            "label": "Link",
+            "name": "ftl_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_65eaedcc94c97",
+            "label": "Testimonials Section",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65eaede194c98",
+            "label": "Pre Title",
+            "name": "testimonials_pre_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our Client Testimonials",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65eaedfb94c99",
+            "label": "Title",
+            "name": "testimoials_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "See What Our Customers Say",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -449,5 +667,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709640094
+    "modified": 1709895183
 }

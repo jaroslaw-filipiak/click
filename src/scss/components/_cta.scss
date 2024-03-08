@@ -34,7 +34,9 @@
     border: 1px solid var(--lightblue);
 
     &:hover {
-      color: #fff;
+      color: var(--darkblue);
+      border: 1px solid var(--main);
+      background-color: #fff;
     }
   }
 
@@ -45,6 +47,17 @@
 
     span {
       color: var(--main);
+      transition: all .3s;
+    }
+
+    &:hover {
+      background-color: var(--lightblue);
+      color: #fff;
+      border: 1px solid var(--lightblue);
+
+      span {
+        color: #fff;
+      }
     }
   }
 }

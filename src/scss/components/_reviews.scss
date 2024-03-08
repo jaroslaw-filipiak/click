@@ -55,6 +55,14 @@
     .divider {
         margin: 75px 0px 30px 0px;
     }
+
+    .slick-dots .slick-active button {
+        border-color:#fff;
+    }
+    .slick-dots .slick-active::after {
+        background-color: #fff;
+    }
+
 }
 
 #reviews .reviews {

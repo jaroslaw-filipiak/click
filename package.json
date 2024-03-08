@@ -12,10 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    // "@wordpress/prettier-config": "^3.10.0",
+    "@wordpress/prettier-config": "^3.10.0",
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5"
-  },
-  // "prettier": "@wordpress/prettier-config"
+  }
 }
