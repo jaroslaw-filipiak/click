@@ -80,23 +80,6 @@
             "append": ""
         },
         {
-            "key": "field_63f4a0fa7cc6e",
-            "label": "About",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
             "key": "field_63f4a1027cc6f",
             "label": "Title",
             "name": "about_title",
@@ -253,6 +236,27 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "thumbnail",
+                    "parent_repeater": "field_61f274eeadd3b"
+                },
+                {
+                    "key": "field_65eecfbf21b8d",
+                    "label": "Label Before Title",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "br",
                     "parent_repeater": "field_61f274eeadd3b"
                 },
                 {
@@ -667,5 +671,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709895183
+    "modified": 1710157395
 }

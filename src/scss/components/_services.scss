@@ -48,6 +48,15 @@
       position: relative;
     }
 
+    &__label {
+      color: var(--main) !important;
+      font-size: 15px !important;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 12px;
+    }
+
     &__icon {
       width: 132px;
       height: 132px;
@@ -70,7 +79,7 @@
     }
 
     &__body {
-      padding: 92px 44px 50px 44px;
+      padding: 100px 30px 50px 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -122,6 +131,10 @@
           background-color: #fff;
           color: var(--main);
         }
+      }
+
+      &--has-label {
+        margin-top: -10px;
       }
     }
   }

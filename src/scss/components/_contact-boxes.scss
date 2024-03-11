@@ -83,6 +83,7 @@ $circleSize: 132px;
       a {
         color: var(--main);
         font-size: 35px;
+        text-underline-offset: 14px;
       }
     }
     &--email {
@@ -90,7 +91,7 @@ $circleSize: 132px;
         color: var(--darkblue);
         font-size: 20px;
         text-decoration-color: var(--main);
-        text-underline-offset: 5px;
+        text-underline-offset: 8px;
       }
     }
     &--book-now {

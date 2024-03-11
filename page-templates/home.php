@@ -35,7 +35,7 @@ endif;
                 </div>
             </div>
             <div class="row hero__buttons d-flex align-items-center">
-                <div class="col d-flex align-items-center ">
+                <div class="col d-flex flex-column flex-sm-row align-items-center ">
                     <a target="<?php echo esc_attr($link_target); ?>" class="hero__buttons--schedule" href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
                     <a class="hero__buttons--call" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
                         <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
@@ -64,6 +64,7 @@ endif;
                     while (have_rows('services_items')) : the_row();
                         $icon = get_sub_field('icon');
                         $bg = get_sub_field('bg');
+                        $label = get_sub_field('label');
                         $title = get_sub_field('title');
                         $excerpt = get_sub_field('excerpt');
                         $url = get_sub_field('url');
@@ -75,10 +76,13 @@ endif;
                                     <img class="img-fluid" loading="lazy" src="<?php echo $icon; ?>" role="presentation">
                                 </div>
                             </div>
-                            <div class="services-item__body">
-                                <h4><?php echo $title ?></h4>
-                                <p><?php echo $excerpt ?></p>
-                                <a href="<?php echo $url ?>">Learn More</a>
+                            <div class="<?php echo $label ? 'services-item__body services-item__body--has-label' : 'services-item__body' ?>">
+                                <?php if ($label) : ?>
+                                    <p class=" services-item__label"><?php echo $label ?></h4>
+                                    <?php endif; ?>
+                                    <h4><?php echo $title ?></h4>
+                                    <p><?php echo $excerpt ?></p>
+                                    <a href="<?php echo $url ?>">Learn More</a>
                             </div>
                         </div>
 

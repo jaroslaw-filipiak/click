@@ -23,14 +23,14 @@ endif;
 
 <!-- hero -->
 <section>
-    <div class="wrapper d-flex align-items-center"
-        style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
+    <div class="wrapper d-flex align-items-center" style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
         <div class="container">
             <div class="row">
                 <div class="content col-12">
                     <h3 class="font-weight-light tracking-normal"><?php the_field('heading'); ?></h3>
                     <h1 class="title--contact"><?php the_field('title'); ?></h1>
-                    <?php the_field('slogan'); ?>
+                    <h2 class="subtitle subtitle--contact"> <?php the_field('slogan'); ?></h2>
+
                 </div>
             </div>
         </div>
@@ -44,32 +44,27 @@ endif;
             <!-- Phone -->
             <div class="col contact-box contact-box--phone">
                 <div class="contact-box__icon">
-                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-phone.webp"
-                        role="presentation">
+                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-phone.webp" role="presentation">
                 </div>
                 <div class="contact-box__content">
                     <h4>Phone</h4>
-                    <a href="tel:224-539-6895"
-                        class="roboto-regular"><?php echo get_field("c5ts_phone", "option"); ?></span></a>
+                    <a href="tel:224-539-6895" class="roboto-regular"><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                 </div>
             </div>
             <!-- Email -->
             <div class="col contact-box contact-box--email">
                 <div class="contact-box__icon">
-                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-envelope.webp"
-                        role="presentation">
+                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-envelope.webp" role="presentation">
                 </div>
                 <div class="contact-box__content">
                     <h4>Email</h4>
-                    <a class="roboto-regular"
-                        href="mailto:<?php echo get_field("c5ts_email", "option"); ?>"><?php echo get_field("c5ts_email", "option"); ?></span></a>
+                    <a class="roboto-regular" href="mailto:<?php echo get_field("c5ts_email", "option"); ?>"><?php echo get_field("c5ts_email", "option"); ?></span></a>
                 </div>
             </div>
             <!-- Book Now -->
             <div href="tel:224-539-6895" class="col contact-box contact-box--book-now">
                 <div class="contact-box__icon">
-                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-pointer.webp"
-                        role="presentation">
+                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-pointer.webp" role="presentation">
                 </div>
                 <div class="contact-box__content">
                     <h4>Book Now</h4>
@@ -87,8 +82,8 @@ endif;
         <div class="container">
             <div class="row wrapper">
                 <div class="col-12 text-center">
-                    <h1><?php the_field( 'cf_title' ); ?></h1>
-                    <h4 class="roboto-regular mx-auto"><?php the_field( 'cf_subtitle' ); ?></h4>
+                    <h1><?php the_field('cf_title'); ?></h1>
+                    <h4 class="roboto-regular mx-auto"><?php the_field('cf_subtitle'); ?></h4>
                 </div>
                 <div class="form col-12">
                     <?php echo do_shortcode('[contact-form-7 id="5" title="Contact Form"]'); ?>

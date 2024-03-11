@@ -1083,13 +1083,14 @@ button:focus {
 .form-control:focus {
   border-color: #000;
 }
-select.form-control {
+select.wpcf7-form-control {
   background: #fff
     url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDk2IDk2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZS8+PHBhdGggZD0iTTgxLjg0NTcsMjUuMzg3NmE2LjAyMzksNi4wMjM5LDAsMCwwLTguNDUuNzY3Nkw0OCw1Ni42MjU3bC0yNS4zOTYtMzAuNDdhNS45OTksNS45OTksMCwxLDAtOS4yMTE0LDcuNjg3OUw0My4zOTQzLDY5Ljg0NTJhNS45OTY5LDUuOTk2OSwwLDAsMCw5LjIxMTQsMEw4Mi42MDc0LDMzLjg0MzFBNi4wMDc2LDYuMDA3NiwwLDAsMCw4MS44NDU3LDI1LjM4NzZaIi8+PC9zdmc+')
     no-repeat;
   background-position: right 25px center;
   background-size: 12px;
   appearance: none;
+  
 }
 textarea.form-control {
   min-height: 250px;

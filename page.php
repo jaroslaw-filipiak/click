@@ -21,17 +21,22 @@ endif;
 ?>
 
 <section>
-    <div class="wrapper d-flex align-items-end" style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
+    <div class="wrapper d-flex align-items-end"
+        style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
         <div class="container">
             <div class="row">
                 <div class="content col-12">
                     <h1><?php the_title(); ?></h1>
-                    <h2 class="subtitle">When you need a highly-skilled and trusted team to install
-                        a new Air Conditioning System, look no further
-                        than NextGen Mechanical.</h2>
+
+                    <h2 class="subtitle">
+                        <?php the_field('page_subheading'); ?>
+                    </h2>
+
                     <div class="d-flex align-items-center ">
-                        <a class="btn btn__schedule" href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
-                        <a class="btn btn__call-us" href="<?php the_permalink(20); ?>">Call&nbsp;
+                        <a class="btn btn__schedule" href="<?php echo esc_url($schedule_url); ?>"
+                            target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
+                        <a class="btn btn__call-us"
+                            href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                             <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                     </div>
                 </div>
@@ -49,9 +54,9 @@ endif;
 
                     <?php while (have_posts()) : the_post(); ?>
 
-                        <?php get_template_part('loop-templates/content', 'page'); ?>
+                    <?php get_template_part('loop-templates/content', 'page'); ?>
 
-                        <?php
+                    <?php
                         if (comments_open() || get_comments_number()) :
                             comments_template();
                         endif;
