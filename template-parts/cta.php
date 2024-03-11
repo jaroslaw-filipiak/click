@@ -24,9 +24,8 @@ endif;
                 <h3 class="mt-0 pt-0">Questions? <span> Contact Us Today!</span></h3>
             </div>
             <div class="col d-flex align-items-center justify-content-center mt-2">
-                <a class="cta--schedule-btn" href="<?php echo esc_url($schedule_url); ?>"
-                    target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
-                <a class="cta--call-btn" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
+                <a class="cta--schedule-btn" href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
+                <a class="cta--call-btn" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                     <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
             </div>
         </div>

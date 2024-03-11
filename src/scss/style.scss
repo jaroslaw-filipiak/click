@@ -8,6 +8,7 @@ Version: 3.0.131
 */
 
 @import './utils/rwd';
+@import './utils/debug';
 @import './base/typography';
 
 @import './components/buttons';
@@ -42,6 +43,27 @@ Version: 3.0.131
   --lightblue: #1a265c;
   --lightBG: #ecf4f7;
   --accent: #facb10;
+  --fs-1: clamp(1rem, 0.33vw + 0.92rem, 1.31rem);
+--fs-2: clamp(1.25rem, 0.53vw + 1.12rem, 1.75rem);
+--fs-3: clamp(1.56rem, 0.81vw + 1.36rem, 2.33rem);
+--fs-4: clamp(1.95rem, 1.22vw + 1.65rem, 3.11rem);
+--fs-5: clamp(2.44rem, 1.79vw + 1.99rem, 4.14rem);
+--fs-6: clamp(3.05rem, 2.6vw + 2.4rem, 5.52rem);
+--fs-7: clamp(3.81rem, 3.74vw + 2.88rem, 7.36rem);
+--fs-8: clamp(4.77rem, 5.31vw + 3.44rem, 9.82rem);
+--fs-9: clamp(5.96rem, 7.5vw + 4.09rem, 13.08rem);
+--fs-10: clamp(7.45rem, 10.52vw + 4.82rem, 17.44rem);
+--fs-11: clamp(9.31rem, 14.67vw + 5.65rem, 23.25rem);
+--fs-12: clamp(11.64rem, 20.37vw + 6.55rem, 30.99rem);
+--fs-13: clamp(14.55rem, 28.17vw + 7.51rem, 41.31rem);
+--fs-14: clamp(18.19rem, 38.82vw + 8.49rem, 55.07rem);
+--fs-15: clamp(22.74rem, 53.33vw + 9.4rem, 73.4rem);
+--fs-16: clamp(28.42rem, 73.08vw + 10.15rem, 97.85rem);
+--fs-17: clamp(35.53rem, 99.9vw + 10.55rem, 130.43rem);
+--fs-18: clamp(44.41rem, 136.27vw + 10.34rem, 173.86rem);
+--fs-19: clamp(55.51rem, 185.53vw + 9.13rem, 231.76rem);
+--fs-20: clamp(69.39rem, 252.16vw + 6.35rem, 308.94rem);
+--fs-21: clamp(86.74rem, 342.19vw + 1.19rem, 411.82rem);
 }
 
 .text-accent {

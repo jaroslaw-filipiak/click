@@ -30,7 +30,9 @@ endif;
             <div class="col col-lg-4">
                 <?php
                 if (!empty($logo_footer)) : ?>
-                    <a href="<?php echo get_home_url() ?>"><img class="img-fluid" loading="lazy" src="<?php echo esc_url($logo_footer['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"></a>
+                <a href="<?php echo get_home_url() ?>"><img class="img-fluid" loading="lazy"
+                        src="<?php echo esc_url($logo_footer['url']); ?>"
+                        alt="<?php echo esc_attr($image['alt']); ?>"></a>
                 <?php endif; ?>
             </div>
 
@@ -59,8 +61,9 @@ endif;
 
             <!-- buttons -->
             <div class="col d-flex flex-column align-items-end">
-                <a class="footer__learn-more" href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>"><?php echo $schedule_title ?></a>
-                <a class=" footer__call" href="">Call
+                <a class="footer__learn-more" href="<?php echo esc_url($schedule_url); ?>"
+                    target="<?php echo esc_attr($schedule_target); ?>"><?php echo $schedule_title ?></a>
+                <a class=" footer__call" href="">Call&nbsp;
                     <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
             </div>
         </div>
@@ -82,7 +85,8 @@ endif;
                 </div>
             </div>
 
-            <div class="social-media col-lg-5 col-md-12 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end align-items-center">
+            <div
+                class="social-media col-lg-5 col-md-12 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end align-items-center">
                 <?php wp_nav_menu(
                     array(
                         'theme_location'  => 'social-media'
@@ -104,9 +108,12 @@ endif;
         <div class="col-sm-2">
             <a href="tel:<?php echo get_field("c5ts_phone", "option"); ?>" class="d-flex align-items-center">
                 <picture>
-                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/icons/icon-sticky.webp" type="image/webp">
-                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/icons/icon-sticky.png" type="image/png">
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icons/icon-sticky.png" alt="icon phone">
+                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/icons/icon-sticky.webp"
+                        type="image/webp">
+                    <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/icons/icon-sticky.png"
+                        type="image/png">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/icons/icon-sticky.png"
+                        alt="icon phone">
                 </picture>
             </a>
         </div>

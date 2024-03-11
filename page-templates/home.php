@@ -98,7 +98,7 @@ endif;
                     <?php $link = get_field('schedule_service', 'option'); ?>
 
                     <a class="cta--schedule-btn" target="<?php echo esc_attr($link_target); ?>" href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
-                    <a class="cta--call-btn" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
+                    <a class="cta--call-btn" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                         <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                 </div>
             </div>
