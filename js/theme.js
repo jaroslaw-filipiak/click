@@ -137,14 +137,14 @@ jQuery(function($){
 				{
 					breakpoint: 1499,
 					settings: {
-					  	arrows: false
+					  	arrows: true
 					}
 				},
 				{
 					breakpoint: 991,
 					settings: {
 						slidesToShow: 1,
-					  	arrows: false
+					  	arrows: true
 					}
 				}
 			]
