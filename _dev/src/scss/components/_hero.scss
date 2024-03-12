@@ -52,10 +52,15 @@
       width: 100%;
       border-radius: 4px;
       text-align: center;
-      // font-size: clamp(1rem, 1rem + 0.651vw, 1.3125rem);
+      font-size: clamp(1rem, 1.225vw + 0.724rem, 1.313rem);
+      line-height: clamp(1.5rem, 0.809vw + 1.318rem, 1.706rem);
 
       @include sm {
         width: calc(50%);
+      }
+
+      @include lg-min {
+         width: 294px;
       }
 
       &:hover {

@@ -170,11 +170,11 @@ endif; ?>
     <div class="wrapper ftl" id="ftl">
         <div class="container">
             <div class="row">
-                <div class="col ftl__col-1">
+                <div class="col-12 col-lg-6 ftl__col-1 ">
                     <h4><?php the_field('ftl_pre_title'); ?></h4>
                     <h3><?php the_field('ftl_title'); ?></h3>
                 </div>
-                <div class="coll ftl__col-2">
+                <div class="col-12 col-lg-6 ftl__col-2">
                     <p class="roboto-light">
                         <?php the_field('ftl_text'); ?>
                     </p>

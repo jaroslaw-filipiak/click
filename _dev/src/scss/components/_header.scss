@@ -28,9 +28,33 @@
   margin: 0;
 }
 
+#header .navbar-toggler {
+  @include lg {
+    padding: 9px 25px 9px 11px;
+  }
+     
+}
+
 #header .phone {
   padding: 18px 0 18px 25px;
   border-left: 1px solid #e4e4e4;
+  display: none; 
+  @include md-min {
+    display: block;
+    padding: 18px 0 18px 11px;
+  }
+  @include lg-min {
+    display: block;
+    padding: 18px 0 18px 25px;
+  }
+  @include xxl {
+    display: block;
+    padding: 18px 25px 18px 25px;
+  }
+
+  @include xl {
+    display: none;
+  }
 }
 #header .phone a {
   position: relative;
@@ -43,6 +67,8 @@
   padding: 2px 0 3px 0;
   margin: 0;
   border-bottom: 2px solid transparent;
+  
+  
 }
 #header .phone a i {
   position: relative;
@@ -54,6 +80,7 @@
 #header .phone a:hover {
   text-decoration: none;
   border-color: var(--main);
+ 
 }
 
 #header .contact a {
@@ -79,6 +106,15 @@
 #header {
   .cta__buttons {
     gap: 8px;
+  }
+
+  .quote {
+    @include xl-min {
+      display:none;
+    }
+    @include xxxl {
+      display:block;
+    }
   }
 
   .quote,

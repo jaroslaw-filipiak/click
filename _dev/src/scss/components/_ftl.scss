@@ -2,11 +2,14 @@
     background-color: var(--lightBG);
 
     &__col-1 {
-        width: 52% !important;
+        @include xxl { width: 52% !important;} 
+       
     }
 
     &__col-2 {
+      @include xxl {
         width: calc(100% - 52%);
+      }
         position: relative;
         left: 100px;
     }
