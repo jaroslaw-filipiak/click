@@ -1,6 +1,9 @@
 #cta,
 .cta {
-  margin-top: 60px;
+  margin-top: 30px;
+  @include lg-min {
+    margin-top: 60px;
+  }
   h3 {
     font-size: clamp(1.563rem, 0.833vw + 1.375rem, 2.125rem);
     line-height: clamp(2.5rem, 0.389vw + 2.413rem, 2.763rem);

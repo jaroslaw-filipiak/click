@@ -123,9 +123,10 @@ if (have_rows('textboxes')) :
         $text = get_sub_field('text');
         $button = get_sub_field('button');
 
-        $offset = get_row_index() % 2 == 0 ? 'offset-0 col-lg-6' : 'offset-lg-2 col-lg-4';
-        $align = get_row_index() % 2 == 0 ? 'd-flex justify-content-end pr-5' : NULL;
+        $offset = get_row_index() % 2 == 0 ? 'offset-0 col-lg-6' : 'col-lg-6';
+        $align = get_row_index() % 2 == 0 ? 'd-flex justify-content-end' : NULL;
         $pt = get_row_index() % 2 == 0 ? 'pt-0' : NULL;
+
 
         if ($button) :
             $button_url = $button['url'];
@@ -137,14 +138,14 @@ if (have_rows('textboxes')) :
         <section>
             <div class="wrapper textboxes__repeater <?php echo $pt ?>" id="textboxes__<?php echo get_row_index() ?>">
                 <div class="container-fluid">
-                    <div class="row <?php echo get_row_index() % 2 == 0 ? 'd-flex flex-row-reverse' : 'd-flex' ?>">
-                        <div class="col-12 d-flex flex-column justify-content-center <?php echo $offset ?>">
+                    <div class="row row--textboxes  <?php echo get_row_index() % 2 == 0 ? 'd-flex flex-row-reverse' : 'd-flex' ?>">
+                        <div class="col-12 d-flex flex-column align-items-start justify-content-center pb-40 <?php echo $offset ?> ">
                             <h4><?php echo $pre_title ?></h4>
                             <h3><?php echo $title ?></h3>
-                            <p class="roboto-light"><?php echo $text ?></p>
+                            <div class="roboto-light"><?php echo $text ?></div>
                             <a target="<?php echo esc_attr($button_target); ?>" href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_title); ?></a>
                         </div>
-                        <div class="col-12 col-lg-6 pl-0 <?php echo $align ?>">
+                        <div class="col-12 col-lg-6 text-center <?php echo $align ?>">
                             <img class="img-fluid" loading="lazy" src="<?php echo esc_url($photo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                         </div>
                     </div>
