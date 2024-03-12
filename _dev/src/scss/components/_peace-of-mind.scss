@@ -2,17 +2,42 @@
 
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom right;
+
+    @include lg-min {
+        background-position: center ;
+    }
+
+    @include lg-max {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+       
+    }
+
+    &__content {
+        @include xxl-min {
+            padding-left: 15px;;
+        }
+    }
+
+    &__img-wrapper {
+        @include lg-max {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
    
     h1, h2, h3, h4  {
         padding: 0;
     }
 
-    h3 {
-        font-size: 48px;
-        line-height: 58px;
+    h3 { 
         font-weight: 700;
         color: #fff;
         padding-bottom: 20px;
+        padding-top: 40px;
+        font-size: clamp(1.875rem, 1.667vw + 1.5rem, 3rem);
+        line-height: clamp(2.438rem, 2.167vw + 1.95rem, 3.9rem);
     }
 
     img {
@@ -20,23 +45,40 @@
     }
 
     ul {
-        padding-top: 26px;
-        
+        padding-bottom: 16px;
+        @include lg-min {
+            padding-top: 26px;
+        }
 
         li {
             display:flex;
             align-items: center;
-            gap: 27px;
+            gap: 19px;
             &:not(:last-child) {
-                margin-bottom: 30px;
+                margin-bottom: 22px;
+                @include lg-min {
+                    margin-bottom: 30px;
+                }
+            }
+            @include lg-min {
+                gap: 27px;
+            }
+
+            img {
+                width: 28px;
+                @include lg-min {
+                    width: auto;
+                }
             }
         }
         p {
-            font-size: 23px;
+          
             color: #fff;
             margin: 0;
             font-family: "Roboto", sans-serif;
             font-weight: 400;
+            font-size: clamp(1.125rem, 0.463vw + 1.021rem, 1.438rem);
+            line-height: clamp(1.463rem, 0.602vw + 1.327rem, 1.869rem);
 
             span {
                 font-family: "Roboto", sans-serif;

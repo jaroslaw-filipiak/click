@@ -22,15 +22,15 @@ if ($bg) {
     <section>
         <div class="wrapper peace-of-mind" id="peace-of-mind" style="background-image: url(<?php echo $bg ? $bg_url : $bg_default ?>);">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-6  d-flex justify-content-end pr-0">
+                <div class="row d-flex flex-column-reverse flex-lg-row align-items-lg-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-end justify-content-md-center peace-of-mind__img-wrapper">
 
                         <img class="img-fluid" loading="lazy" src="<?php echo $img ? esc_url($img['url']) : $img_default ?>" alt="<?php echo esc_attr($img['alt']); ?>">
 
                     </div>
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center " style="padding-left: 74px;">
+                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-xl-start justify-content-center peace-of-mind__content">
 
-                        <h3><?php the_field('peace_of_mind_title'); ?></h3>
+                        <div><?php the_field('peace_of_mind_title'); ?></div>
 
                         <?php if (have_rows('peace_of_mind_list_items')) : ?>
 
