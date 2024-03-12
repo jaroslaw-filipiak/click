@@ -58,7 +58,7 @@ endif;
                     <h3><?php the_field('services_title_2'); ?></h3>
                 </div>
             </div>
-            <div class="row mx-auto services__items-wrapper">
+            <div class="mx-auto services__items-wrapper">
 
                 <?php
 
@@ -72,8 +72,8 @@ endif;
                         $url = get_sub_field('url');
                 ?>
 
-                <div class="services-item p-0">
-                    <div class="services-item__header border" style="background-image: url('<?php echo $bg ?>')">
+                <div class="services-item">
+                    <div class="services-item__header" style="background-image: url('<?php echo $bg ?>')">
                         <div class="services-item__icon">
                             <img class="img-fluid" loading="lazy" src="<?php echo $icon; ?>" role="presentation">
                         </div>
