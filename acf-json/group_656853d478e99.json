@@ -485,9 +485,9 @@
             "append": ""
         },
         {
-            "key": "field_65eaf0034c9af",
-            "label": "Columns",
-            "name": "serving_area_columns_repeater",
+            "key": "field_65f05d99754af",
+            "label": "List",
+            "name": "serving_area_list_repeater",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -501,17 +501,17 @@
             "layout": "table",
             "pagination": 0,
             "min": 0,
-            "max": 3,
+            "max": 0,
             "collapsed": "",
             "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_65eaf0354c9b0",
-                    "label": "List",
-                    "name": "list",
+                    "key": "field_65f05da7754b0",
+                    "label": "Item",
+                    "name": "list_item",
                     "aria-label": "",
-                    "type": "repeater",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -520,37 +520,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
-                    "rows_per_page": 20,
-                    "sub_fields": [
-                        {
-                            "key": "field_65eaf730a532e",
-                            "label": "item",
-                            "name": "item",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_65eaf0354c9b0"
-                        }
-                    ],
-                    "parent_repeater": "field_65eaf0034c9af"
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65f05d99754af"
                 }
             ]
         }
@@ -573,5 +548,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709900136
+    "modified": 1710251526
 }
