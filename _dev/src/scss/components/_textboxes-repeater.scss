@@ -24,8 +24,9 @@
     p {
         color: #3a4054;
         font-size: 19px;
-        max-width: 560px;
-
+        @include lg-min {
+            max-width: 560px;
+        }
     }
 
     a {
