@@ -13,7 +13,9 @@ if (!defined('ABSPATH')) {
 get_header();
 ?>
 
-<div class="wrapper d-flex align-items-end" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/img/heroes/hero.webp');" id="hero-sub">
+<div class="wrapper d-flex align-items-end"
+    style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/img/heroes/hero.webp');"
+    id="hero-sub">
     <div class="container">
         <div class="row">
             <div class="content col-12 text-center">
@@ -30,11 +32,11 @@ get_header();
 
             <?php if (have_posts()) : ?>
 
-                <?php while (have_posts()) : the_post(); ?>
+            <?php while (have_posts()) : the_post(); ?>
 
-                    <?php get_template_part('loop-templates/content', get_post_format());    ?>
+            <?php get_template_part('loop-templates/content', get_post_format());    ?>
 
-                <?php endwhile; ?>
+            <?php endwhile; ?>
 
             <?php endif; ?>
 
@@ -45,21 +47,3 @@ get_header();
 </div>
 
 <?php get_footer(); ?>
-
-
-<!-- TODO: 
-spacja przy buttonach ✔
-podstroy hero default ✔
-podstrony zdjęcie ✔
-podstrony hero bez sego subheadingu  ✔
-rwd 
-zip code drukowanymi ✔
-State select , 51 stanów ✔
-title settings ✔
-buttony sqlka nie załapała
-import pliku xml ✔
-add readme.md
-remove about secton in acf in homepage ✔
-sprawdź stronę z reviewsami ✔
-font awesome artefakty ✔
--->

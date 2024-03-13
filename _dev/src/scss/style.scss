@@ -546,8 +546,11 @@
 
 #page-wrapper #main {
   position: relative;
-  padding-right: 60px;
+  padding-right: 15px;
   background-color: #fff;
+  @include xxl-min {
+    padding-right: 60px;
+  }
 }
 #page-wrapper #main::before {
   content: '';
@@ -584,7 +587,9 @@
 .entry-content h2,
 h1.post-title {
   color: var(--darkblue2);
-  font-size: 51px;
+  // font-size: 51px;
+  font-size: clamp(2.25rem, 1.339vw + 1.982rem, 3.188rem);
+  line-height: clamp(3.375rem, 1.098vw + 3.155rem, 4.144rem);
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.33px;
@@ -631,9 +636,11 @@ h1.post-title::after {
 .entry-content ul li,
 .entry-content ol li {
   color: #3a4054;
-  font-size: 19px;
+  // font-size: 19px;
+  font-size: clamp(1rem, 0.268vw + 0.946rem, 1.188rem);
+  line-height: clamp(1.5rem, 0.062vw + 1.488rem, 1.544rem);
   font-weight: 300;
-  line-height: 32px;
+  // line-height: 32px;
   letter-spacing: -0.19px;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -796,8 +803,11 @@ h1.post-title::after {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.36px;
-  padding: 28px 0 27px 40px;
+  padding: 28px 0 27px 10px;
   margin: 0;
+  @include xxl-min {
+    padding: 28px 0 27px 40px;
+  } 
 }
 .widget-links ul {
   padding: 0;
@@ -813,8 +823,12 @@ h1.post-title::after {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -0.27px;
-  padding: 17px 0 17px 70px;
+  padding: 17px 0 17px 30px;
   margin: 0;
+
+  @include xxl-min {
+    padding: 17px 0 17px 70px;
+  }
 }
 .widget-links ul li a::before {
   content: '\f0da';
@@ -823,7 +837,10 @@ h1.post-title::after {
   font-size: 12px;
   font-weight: 700;
   position: absolute;
-  left: 50px;
+  left: 10px;
+  @include xxl-min {
+    left: 50px;
+  }
 }
 .widget-links ul li a:hover,
 .widget-links ul li a[aria-current='page'] {

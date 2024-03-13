@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
 
-<div class="col-md-3 widget-area" id="sidebar-area" role="complementary">
+<div class="d-none d-xl-flex col-xl-3 widget-area" id="sidebar-area" role="complementary">
 
 
     <div class="widget-links">

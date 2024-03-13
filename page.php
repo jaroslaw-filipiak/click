@@ -13,6 +13,7 @@ if (!defined('ABSPATH')) {
 get_header();
 $theme_uri = get_template_directory_uri();
 $schedule = get_field('schedule_service', 'option');
+$has_subtitle = get_field('page_subheading');
 if ($schedule) :
     $schedule_url = $schedule['url'];
     $schedule_title = $schedule['title'];
@@ -21,26 +22,26 @@ endif;
 ?>
 
 <section>
-    <div class="wrapper d-flex align-items-end" style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
+    <div class="wrapper d-flex align-items-end"
+        style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
         <div class="container">
-            <div class="row">
-                <div class="content col-12">
+            <div class="row ">
+                <div class="content col-12 col-xl-9">
                     <h1><?php the_title(); ?></h1>
 
-                    <h2 class="subtitle">
+                    <?php if ($has_subtitle) : ?>
+                    <h2 class="subtitle" style="border: 1px dashed red;">
                         <?php the_field('page_subheading'); ?>
                     </h2>
 
-                    <!-- <div class="d-flex flex-column flex-lg-row align-items-center ">
-                        <a class="btn btn__schedule" href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
-                        <a class="btn btn__call-us" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
-                            <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
-                    </div> -->
+                    <?php endif; ?>
 
                     <div class="row hero__buttons d-flex align-items-center">
                         <div class="col d-flex flex-column flex-sm-row align-items-center">
-                            <a target="<?php echo esc_attr($schedule_target); ?>" class="hero__buttons--schedule" href="<?php echo esc_url($schedule_url); ?>"><?php echo $schedule_title ?></a>
-                            <a class="hero__buttons--call" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
+                            <a target="<?php echo esc_attr($schedule_target); ?>" class="hero__buttons--schedule"
+                                href="<?php echo esc_url($schedule_url); ?>"><?php echo $schedule_title ?></a>
+                            <a class="hero__buttons--call"
+                                href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
                                 <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                         </div>
                     </div>
@@ -53,15 +54,15 @@ endif;
 <section>
     <div class="wrapper" id="page-wrapper">
         <div class="container" id="content" tabindex="-1">
-            <div class="row flex-lg-nowrap">
+            <div class="row flex-xl-nowrap">
 
-                <main class="wrapper col-md-9" id="main">
+                <main class="wrapper col-12 col-xl-9" id="main">
 
                     <?php while (have_posts()) : the_post(); ?>
 
-                        <?php get_template_part('loop-templates/content', 'page'); ?>
+                    <?php get_template_part('loop-templates/content', 'page'); ?>
 
-                        <?php
+                    <?php
                         if (comments_open() || get_comments_number()) :
                             comments_template();
                         endif;

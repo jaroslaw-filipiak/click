@@ -24,9 +24,7 @@ if ($bg) {
             <div class="container-fluid">
                 <div class="row d-flex flex-column-reverse flex-lg-row align-items-lg-center">
                     <div class="col-12 col-lg-6 d-flex justify-content-end justify-content-md-center peace-of-mind__img-wrapper">
-
                         <img class="img-fluid" loading="lazy" src="<?php echo $img ? esc_url($img['url']) : $img_default ?>" alt="<?php echo esc_attr($img['alt']); ?>">
-
                     </div>
                     <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-xl-start justify-content-center peace-of-mind__content">
 
