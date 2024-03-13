@@ -175,5 +175,7 @@ jQuery(function($){
 			});
 		}
 
+		$('.form-group__zipcode-mask input').mask("99999");
+
     });
 });

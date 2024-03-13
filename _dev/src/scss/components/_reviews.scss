@@ -4,7 +4,8 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-
+    max-width: 100vw;
+    overflow: hidden;
     
     .reviews__heading {
         color: #fff;
