@@ -21,8 +21,7 @@ endif;
 ?>
 
 <section>
-    <div class="wrapper d-flex align-items-end"
-        style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
+    <div class="wrapper d-flex align-items-end" style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
         <div class="container">
             <div class="row">
                 <div class="content col-12">
@@ -32,12 +31,18 @@ endif;
                         <?php the_field('page_subheading'); ?>
                     </h2>
 
-                    <div class="d-flex align-items-center ">
-                        <a class="btn btn__schedule" href="<?php echo esc_url($schedule_url); ?>"
-                            target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
-                        <a class="btn btn__call-us"
-                            href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
+                    <!-- <div class="d-flex flex-column flex-lg-row align-items-center ">
+                        <a class="btn btn__schedule" href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>"> <?php echo $schedule_title ?></a>
+                        <a class="btn btn__call-us" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                             <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
+                    </div> -->
+
+                    <div class="row hero__buttons d-flex align-items-center">
+                        <div class="col d-flex flex-column flex-sm-row align-items-center">
+                            <a target="<?php echo esc_attr($schedule_target); ?>" class="hero__buttons--schedule" href="<?php echo esc_url($schedule_url); ?>"><?php echo $schedule_title ?></a>
+                            <a class="hero__buttons--call" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
+                                <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,9 +59,9 @@ endif;
 
                     <?php while (have_posts()) : the_post(); ?>
 
-                    <?php get_template_part('loop-templates/content', 'page'); ?>
+                        <?php get_template_part('loop-templates/content', 'page'); ?>
 
-                    <?php
+                        <?php
                         if (comments_open() || get_comments_number()) :
                             comments_template();
                         endif;
