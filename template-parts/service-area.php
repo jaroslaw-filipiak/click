@@ -20,7 +20,7 @@ if ($bg) {
     <div class="wrapper services-area" id="area">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-7  services-area__content">
+                <div class="col-12 col-xl-7  services-area__content">
                     <h3><?php echo get_field('serving_area_title', 'option') ?></h3>
                     <h5><?php echo get_field('serving_area_word_before_list', 'option') ?></h5>
                     <div class="row">

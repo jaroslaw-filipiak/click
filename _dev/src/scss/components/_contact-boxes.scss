@@ -1,19 +1,39 @@
-$circleSize: 132px;
+$circleSize_mobile: 84px;
+$circleSize_tablet: 96px;
+$circleSize_desktop: 132px;
 
 @mixin shadow() {
-  -webkit-box-shadow: -3px 15px 43px -7px rgba(235, 244, 248, 1);
-  -moz-box-shadow: -3px 15px 43px -7px rgba(235, 244, 248, 1);
-  box-shadow: -3px 15px 43px -7px rgba(235, 244, 248, 1);
+
+  -webkit-box-shadow: -3px 2px 36px -12px rgba(150, 150, 150, .4);
+  -moz-box-shadow: -3px 2px 36px -12px rgba(150, 150, 150, .4);
+  box-shadow: -3px 2px 36px -12px rgba(150, 150, 150, .4);
+
+  @include lg {
+    -webkit-box-shadow: -3px 15px 43px -7px rgba(235, 244, 248, 1);
+    -moz-box-shadow: -3px 15px 43px -7px rgba(235, 244, 248, 1);
+    box-shadow: -3px 15px 43px -7px rgba(235, 244, 248, 1);
+  }
 }
 
 .contact-boxes {
+
+  @include lg-min {
+    margin-top: -112px;
+  }
   .row {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: center;
-    gap: 25px;
+    padding: 0px 15px;
+    gap: 60px;
+
+    @include lg-min {
+      flex-direction: row;
+      gap: 25px;
+    }
   }
-  margin-top: -112px;
+ 
   .contact-box {
     background-color: #fff;
     border-radius: 5px;
@@ -25,28 +45,44 @@ $circleSize: 132px;
     text-decoration: none;
     padding: 33px 0px;
     position: relative;
-    min-height: 274px;
+    min-height: 244px;
     @include shadow;
-
+    
+   
     &:hover {
       text-decoration: none;
     }
 
     &__icon {
-      width: $circleSize;
-      height: $circleSize;
+      width: $circleSize_mobile;
+      height: $circleSize_mobile;
       border-radius: 100%;
       background-color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      top: -42px;
       @include shadow;
 
-      position: absolute;
-      top: -66px;
+      @include lg {
+        top: -48px;
+        width: $circleSize_tablet;
+        height: $circleSize_tablet;
+      }
+
+      @include xl-min {
+        top: -66px;
+        width: $circleSize_desktop;
+        height: $circleSize_desktop;
+      }
       img {
         &::selection {
           background-color: transparent;
+        }
+        transform: scale(0.65);
+        @include xl-min {
+          transform: scale(1);
         }
       }
     }
@@ -60,7 +96,8 @@ $circleSize: 132px;
 
       h4 {
         display: inline-block;
-        font-size: 26px;
+        font-size: clamp(1.25rem, 0.536vw + 1.143rem, 1.625rem);
+        line-height: clamp(1.875rem, 0.339vw + 1.807rem, 2.113rem);
         font-weight: 500;
         color: var(--darkblue);
         padding-bottom: 20px;
@@ -82,25 +119,29 @@ $circleSize: 132px;
     &--phone {
       a {
         color: var(--main);
-        font-size: 35px;
-        text-underline-offset: 14px;
+        font-size: clamp(1.25rem, 1.339vw + 0.982rem, 2.188rem);
+        line-height: clamp(1.875rem, 1.384vw + 1.598rem, 2.844rem);
       }
     }
+
     &--email {
       a {
         color: var(--darkblue);
-        font-size: 20px;
+        font-size: clamp(1.25rem, 0vw + 1.25rem, 1.25rem);
+        line-height: clamp(1.625rem, -0.357vw + 1.946rem, 1.875rem);
         text-decoration-color: var(--main);
         text-underline-offset: 8px;
       }
     }
+
     &--book-now {
       a {
         margin-top: 10px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
+        font-size: clamp(1.125rem, 0vw + 1.125rem, 1.125rem);
+        line-height: clamp(1.463rem, -0.321vw + 1.752rem, 1.688rem);
         font-weight: 700;
         color: #fff;
         background-color: var(--main);

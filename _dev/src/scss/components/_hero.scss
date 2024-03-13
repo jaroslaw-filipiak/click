@@ -146,6 +146,9 @@
 
 #hero-sub {
 
+  background-size: cover;
+  background-repeat: no-repeat;
+
  
   .btn {
     font-size: 21px;
@@ -156,7 +159,8 @@
 
   h1 {
     color: #fff;
-    font-size: 62px;
+    font-size: clamp(2.625rem, 1.852vw + 2.208rem, 3.875rem);
+    line-height: clamp(3.938rem, 1.63vw + 3.571rem, 5.038rem);
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -1.6px;
@@ -164,14 +168,29 @@
     margin: 0;
   }
 
+  h3 {
+    font-weight: 300;
+    color: #fff;
+    font-size: clamp(0.938rem, 0.741vw + 0.771rem, 1.438rem);
+    line-height: clamp(0.938rem, 1.38vw + 0.627rem, 1.869rem);
+  }
+
+
+
   .subtitle {
-    font-size: 23px;
+    // font-size: 23px;
+    
     color: #fff;
     max-width: 610px;
-    margin: 10px 0px 24px 0px;
-
+    
+    @include lg-min {
+      margin: 10px 0px 24px 0px;
+    }
+  
     &--contact {
-      font-size: 26px;
+      // font-size: 26px;
+      font-size: clamp(0.938rem, 1.019vw + 0.708rem, 1.625rem);
+      line-height: clamp(1.406rem, 1.046vw + 1.171rem, 2.113rem);
       span {
         font-weight: 700;
       }
@@ -183,8 +202,8 @@
 .page-template-contact {
   #hero-sub {
     height: 670px;
-    .title--contact {
-      font-size: 66px;
-    }
+    // .title--contact {
+    //   font-size: 66px;
+    // }
   }
 }

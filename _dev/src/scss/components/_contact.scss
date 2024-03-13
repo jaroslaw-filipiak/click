@@ -73,7 +73,8 @@
 
 #contact-wrapper {
   h1 {
-    font-size: 37px;
+    font-size: clamp(1.875rem, 0.625vw + 1.75rem, 2.313rem);
+    line-height: clamp(2.813rem, 0.277vw + 2.757rem, 3.006rem);
     color: var(--darkblue2);
     font-weight: 700;
     position: relative;
@@ -93,25 +94,37 @@
   h4 {
     padding-top: 7px;
     color: #3a4054;
-    font-size: 20px;
     max-width: 800px;
+    font-size: clamp(1rem, 0.357vw + 0.929rem, 1.25rem);
+    line-height: clamp(1.5rem, 0.179vw + 1.464rem, 1.625rem);
   }
 
   .form-row {
-    // gap: 15px;
-    // flex-wrap: nowrap;
     margin: 0;
   }
 
   .form-group--textarea {
-    margin-left: 10px;
-    margin-right: 10px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    @include md-min {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
   }
 
   .form-row > .col,
   .form-row > [class*='col-'] {
-    padding-right: 10px;
-    padding-left: 10px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    @include md-min {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+   
   }
 
   .form-group {
@@ -119,16 +132,22 @@
   }
 }
 
+#contact-wrapper .wrapper {
+  padding-bottom: 0;
+}
+
 #contact-wrapper .form {
   margin-top: 20px;
 }
 
 #contact-wrapper .form .wpcf7 {
-  padding: 40px;
   background-color: #fff;
   border-radius: 5px;
-  max-width: 1160px;
+  max-width: 1440px;
   margin: 0 auto;
+  @include lg-min {
+    padding: 40px;
+  }
 }
 
 .contact-map {
@@ -137,3 +156,4 @@
 .contact-map iframe {
   filter: grayscale(100%);
 }
+
