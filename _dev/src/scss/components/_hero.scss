@@ -9,6 +9,10 @@
   background-position: top center;
   z-index: 4;
 
+  @include lg-min {
+    padding-bottom: 145px;
+  }
+
   @include lg-max {
     background-position: center right 30%;
     background-repeat: no-repeat;
@@ -38,12 +42,12 @@
     color: #fff;
     max-width: 680px;
     padding-bottom: 14px;
-    font-size: clamp(2.063rem, 2.671vw + 1.461rem, 3.866rem);
-    line-height: clamp(2.063rem, 4.389vw + 1.075rem, 5.025rem);
+    font-size: 62px;
+    line-height: 68px;
     text-align: center;
     @include lg-min {
       text-align: left;
-      padding-bottom: 24px;
+      padding-bottom: 12px;
     }
   }
 
@@ -52,11 +56,10 @@
     text-align: center;
     color: #fff;
     padding-bottom: 6px;
-    font-size: clamp(0.938rem, 0.741vw + 0.771rem, 1.438rem);
-    line-height: clamp(0.938rem, 1.38vw + 0.627rem, 1.869rem);
+    font-size: 23px;
+    line-height: 60px;
     @include lg-min {
       text-align: left;
-      padding-bottom: 20px;
     }
   }
 
@@ -64,8 +67,8 @@
     font-weight: 300;
     color: #fff;
     text-align: center;
-    font-size: clamp(0.938rem, 1.019vw + 0.708rem, 1.625rem);
-    line-height: clamp(0.938rem, 1.741vw + 0.546rem, 2.113rem);
+    font-size: 26px;
+    line-height: 60px;
     @include lg-min {
       text-align: left;
       padding-bottom: 20px;
@@ -74,18 +77,17 @@
   }
 
   &__buttons {
-    margin-top: 34px;
-
+   
     a {
-      margin: 0px 4px;
+      margin: 0px 6px;
       display: block;
       padding: 20px 30px;
       font-weight: 700;
       width: 100%;
       border-radius: 4px;
       text-align: center;
-      font-size: clamp(1.063rem, 0.37vw + 0.979rem, 1.313rem);
-      line-height: clamp(1.063rem, 0.954vw + 0.848rem, 1.706rem);
+      font-size: 21px;
+      height: 72px;
 
       @include lg-max {
         margin-bottom: 10px !important;
@@ -178,8 +180,8 @@
 
   h1 {
     color: #fff;
-    font-size: clamp(2.625rem, 1.852vw + 2.208rem, 3.875rem);
-    line-height: clamp(3.938rem, 1.63vw + 3.571rem, 5.038rem);
+    font-size: 62px;
+    line-height: 68px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -1.6px;
@@ -190,17 +192,23 @@
   h3 {
     font-weight: 300;
     color: #fff;
-    font-size: clamp(0.938rem, 0.741vw + 0.771rem, 1.438rem);
-    line-height: clamp(0.938rem, 1.38vw + 0.627rem, 1.869rem);
+    font-size: 23px;
+    line-height: 35px;
   }
 
+  .content:not(.content--has-subtitle) {
 
+    h1 {
+      margin-bottom: 46px;
+    }
+
+  }
 
   .subtitle {
-    // font-size: 23px;
-    
+    font-size: 23px;
+    line-height: 35px;
+    font-weight: 300;
     color: #fff;
-    max-width: 610px;
     
     @include lg-min {
       margin: 10px 0px 24px 0px;

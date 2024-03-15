@@ -38,15 +38,6 @@ endif;
 
     <meta name="designer" content="click5 Interactive LLC - www.click5interactive.com" />
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $theme_uri ?>/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $theme_uri ?>/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $theme_uri ?>/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo $theme_uri ?>/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="<?php echo $theme_uri ?>/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
     <?php wp_head(); ?>
 </head>
 
@@ -56,35 +47,28 @@ endif;
     <div class="site" id="page">
         <?php if (get_field("hello_bar_enable", "options") == 1) : ?>
 
-        <div id="hello-bar">
-            <a href="<?php echo get_field("hello_bar_url", "options") ?>">
-                <?php echo get_field("hello_bar_text", "options") ?>
-            </a>
-        </div>
+            <div id="hello-bar">
+                <a href="<?php echo get_field("hello_bar_url", "options") ?>">
+                    <?php echo get_field("hello_bar_text", "options") ?>
+                </a>
+            </div>
 
         <?php endif; ?>
 
-        <header
-            class="sticky-top d-flex justify-content-between align-items-center<?php echo (get_field("hello_bar_enable", "options") == 1) ? ' hello-bar' : ''; ?>"
-            id="header" itemscope itemtype="http://schema.org/WebSite">
-            <a class="skip-link sr-only sr-only-focusable"
-                href="#content"><?php esc_html_e('Skip to content', 'click5'); ?></a>
+        <header class="sticky-top d-flex justify-content-between align-items-center<?php echo (get_field("hello_bar_enable", "options") == 1) ? ' hello-bar' : ''; ?>" id="header" itemscope itemtype="http://schema.org/WebSite">
+            <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'click5'); ?></a>
 
             <div class="logo">
-                <a rel="home" href="<?php echo esc_url(home_url('/')); ?>"
-                    title="<?php echo esc_attr(get_bloginfo('name')); ?>" itemprop="url">
+                <a rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" itemprop="url">
                     <?php if (!empty($logo)) : ?>
-                    <img loading="lazy" src="<?php echo esc_url($logo['url']); ?>"
-                        alt="<?php echo esc_attr($logo['alt']); ?>" />
+                        <img loading="lazy" src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
                     <?php endif;  ?>
                 </a>
             </div>
 
             <div class="navigation d-flex justify-content-end align-items-center">
                 <nav class="navbar navbar-expand-xl">
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="<?php esc_attr_e('Toggle navigation', 'click5'); ?>">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'click5'); ?>">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
@@ -120,8 +104,7 @@ endif;
                     </div>
 
                     <div class="schedule">
-                        <a href="<?php echo esc_url($schedule_url); ?>"
-                            target="<?php echo esc_attr($schedule_target); ?>">
+                        <a href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>">
                             <?php echo $schedule_title ?>
                         </a>
                     </div>
