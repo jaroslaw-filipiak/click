@@ -1,25 +1,17 @@
 .ftl{
     background-color: var(--lightBG);
+    min-height: 389px;
 
-    &__col-1 {
-        @include xxl { width: 52% !important;} 
-       
+    .row {
+        padding-top: 7px;
     }
 
-    &__col-2 {
-
+    &__col-2__inner {  
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        
-      @include xxl {
-        width: calc(100% - 52%);
-        position: relative;
-        left: 100px;
-      }
-       
+        align-items: flex-start;   
+        padding-left: 40px;     
     }
-
 
     h1, h2, h3, h4  {
         padding: 0;
@@ -28,12 +20,10 @@
         color: var(--main);
         text-transform: uppercase;
         margin-bottom: 4px;
-        letter-spacing: 1px;
-        font-size: clamp(0.813rem, 0.463vw + 0.708rem, 1.125rem);
-        line-height: clamp(1.3rem, 0.241vw + 1.246rem, 1.463rem);
+        letter-spacing: 2.5px;
+        font-size: 18px;
 
         @include lg-min {
-            letter-spacing: 4px;
             margin-bottom: 10px;
         }
     }
@@ -42,8 +32,9 @@
         font-weight: 700;
         color: var(--darkblue2);
         padding-bottom: 6px;
-        font-size: clamp(1.875rem, 1.944vw + 1.438rem, 3.188rem);
-        line-height: clamp(2.063rem, 2.139vw + 1.581rem, 3.506rem);
+        font-size: 51px;
+        line-height: 58px;
+        letter-spacing: -3px;
         @include lg-min {
             padding-bottom: 20px;
         }
@@ -51,27 +42,23 @@
 
     p {
         color: #3a4054;
-        font-size: clamp(1rem, 0.278vw + 0.938rem, 1.188rem);
-        line-height: clamp(1.6rem, 0.444vw + 1.5rem, 1.9rem);
-        @include lg-min {
-            max-width: 560px;
-        }
+        font-size: 19px;
+        letter-spacing: -0.3px;
     }
 
     a {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0px 30px;
+        padding: 0px 62px;
         font-weight: 700;
         color: #fff;
         background-color: var(--main);
         border: 2px solid var(--main);
         border-radius: 3px;
         min-width: 180px;
-        height: 50px;
-        font-size: clamp(0.938rem, 0.185vw + 0.896rem, 1.063rem);
-        line-height: clamp(1.219rem, 0.241vw + 1.165rem, 1.381rem);
+        height: 52px;
+        font-size: 17px;
 
         @include lg-min {
             margin-top: 10px;
@@ -83,6 +70,5 @@
             color: var(--main);
         }
 
-       
     }
 }
