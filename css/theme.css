@@ -805,8 +805,8 @@ button:focus {
   display: none !important;
 }
 .social-media ul li a {
-  width: 62px;
-  height: 62px;
+  width: 52px;
+  height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
