@@ -42,10 +42,11 @@ endif;
                     <img loading="lazy" src="<?php echo $theme_uri ?>/img/icons/pin.webp" role="presentation">
                     <p class="roboto-medium m-0">Address</p>
                 </div>
-                <div class="text-white roboto-light">
+                <div class="footer__content text-white roboto-light">
                     <?php echo get_field("c5ts_address", "option"); ?>
+                    <a class="get-directions" href="<?php echo get_field('c5ts_map', 'option') ?>">Get Directions</a>
                 </div>
-                <a class="get-directions" href="<?php echo get_field('c5ts_map', 'option') ?>">Get Directions</a>
+
             </div>
 
             <!-- hours -->
@@ -54,7 +55,7 @@ endif;
                     <img loading="lazy" src="<?php echo $theme_uri ?>/img/icons/clock.webp" role="presentation">
                     <p class="roboto-medium m-0">Office Hours</p>
                 </div>
-                <div class="roboto-light">
+                <div class="footer__content roboto-light">
                     <?php echo get_field('global_office_hours', 'option') ?>
                 </div>
             </div>

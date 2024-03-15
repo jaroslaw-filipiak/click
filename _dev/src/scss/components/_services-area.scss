@@ -22,6 +22,9 @@
 
     &__content {
         z-index:2;
+        @include lg-min {
+            padding-top: 45px;
+        }
     }
 
     &__img {
@@ -56,16 +59,17 @@
 
     h5 {
         color: var(--main);
-        font-size: clamp(0.813rem, 0.463vw + 0.708rem, 1.125rem);
-        line-height: clamp(1.056rem, 0.602vw + 0.921rem, 1.463rem);
+        letter-spacing: 2.5px;
+        font-size: 18px;
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: 35px;
         margin-bottom: 24px;
     }
 
     h3 {
-        font-size: clamp(1.625rem, 2.315vw + 1.104rem, 3.188rem);
-        line-height: clamp(2.113rem, 3.009vw + 1.435rem, 4.144rem);
+        font-size: 51px;
+        line-height: 58px;
+        letter-spacing: -3px;
         font-weight: 700;
         color: #0f2156;
         
@@ -81,8 +85,8 @@
 
     li {
         font-family: 'Roboto', sans-serif;
-        font-size: clamp(1rem, 0.278vw + 0.938rem, 1.188rem);
-        line-height: clamp(1.3rem, 0.361vw + 1.219rem, 1.544rem);
+        font-size:19px;
+        line-height: 1.7;
         color: #3a4054;
         padding-bottom: 3px;
         width: calc(50% - 10px);
