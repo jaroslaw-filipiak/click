@@ -1,122 +1,100 @@
 .textboxes {
 
-    &__container {
-        margin: 0 auto;
-        padding-right: 15px;
-        padding-left: 15px;
-        
-        @include lg {     
-            max-width: 960px;       
-        }
-        @include xl {
-            max-width: 1140px;
-        }
-        @include xxl-min {
-            max-width: 1320px;
+    background-color: var(--lightBG);
+    overflow: hidden;
+
+    &:last-of-type {
+            padding-bottom: 0px;
+            @include lg-min {
+                padding-bottom: 55px;
+            
+            }
+    }
+
+    
+    h1, h2, h3, h4  {
+        padding: 0;
+    }
+
+    h4 {
+        color: var(--main);
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        letter-spacing: 2.5px;
+        font-size: 18px;
+
+        @include lg-min {
+            letter-spacing: 2.5px;
+            margin-bottom: 10px;
         }
     }
 
-    &__img-wrapper {
-       
-        @include xl-max {
-            padding: 0px;
-        }
-
-        img {
-            max-width: initial !important;
-            @include lg-max {
-                min-width: 100vw;
-            }
-         
+    h3 {
+        font-weight: 700;
+        color: var(--darkblue2);
+        padding-bottom: 6px;
+        font-size: 51px;
+        line-height: 58px;
+        letter-spacing: -3px;
+        @include lg-min {
+            padding-bottom: 20px;
         }
     }
 
-    &__repeater {
-        background-color: var(--lightBG);
+    p {
+        color: #3a4054;
+        font-size: 19px;
+        line-height: 34px;
+    }
 
-        &:last-of-type {
-                padding-bottom: 0px;
-                @include lg-min {
-                    padding-bottom: 55px;
-                
-                }
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px 62px;
+        font-weight: 700;
+        color: #fff;
+        background-color: var(--main);
+        border: 2px solid var(--main);
+        border-radius: 3px;
+        min-width: 180px;
+        height: 52px;
+        font-size: 17px;
+
+        @include lg-min {
+            margin-top: 15px;
         }
-    
-        .row--textboxes {
-    
-            @include xl  {
-                max-width: 1320px;
-                margin: 0 auto;
-            }
-    
-        }
-        
-        h1, h2, h3, h4  {
-            padding: 0;
-        }
-    
-        h4 {
+
+        &:hover {
+            text-decoration: none;
+            background-color: #fff;
             color: var(--main);
-            text-transform: uppercase;
-            margin-bottom: 4px;
-            letter-spacing: 1px;
-            font-size: clamp(0.813rem, 0.463vw + 0.708rem, 1.125rem);
-            line-height: clamp(1.3rem, 0.241vw + 1.246rem, 1.463rem);
-    
-            @include lg-min {
-                letter-spacing: 4px;
-                margin-bottom: 10px;
-            }
         }
-    
-        h3 {
-            font-weight: 700;
-            color: var(--darkblue2);
-            padding-bottom: 6px;
-            font-size: clamp(1.875rem, 1.944vw + 1.438rem, 3.188rem);
-            line-height: clamp(2.063rem, 2.139vw + 1.581rem, 3.506rem);
-            @include lg-min {
-                padding-bottom: 20px;
-            }
-        }
-    
-        p {
-            color: #3a4054;
-            font-size: clamp(1rem, 0.278vw + 0.938rem, 1.188rem);
-            line-height: clamp(1.6rem, 0.444vw + 1.5rem, 1.9rem);
-            @include lg-min {
-                max-width: 560px;
-            }
-        }
-    
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0px 30px;
-            font-weight: 700;
-            color: #fff;
-            background-color: var(--main);
-            border: 2px solid var(--main);
-            border-radius: 3px;
-            min-width: 180px;
-            height: 50px;
-            font-size: clamp(0.938rem, 0.185vw + 0.896rem, 1.063rem);
-            line-height: clamp(1.219rem, 0.241vw + 1.165rem, 1.381rem);
-    
-            @include lg-min {
-                margin-top: 10px;
-            }
-    
-            &:hover {
-                text-decoration: none;
-                background-color: #fff;
-                color: var(--main);
-            }
-    
-           
-        }
+
+       
     }
+
+    &__content {
+        padding-bottom: 65px;
+        padding-left: 40px;
+        padding-right: 80px;
+    }
+
+    &__photo {
+        flex: 0 0 calc(50% + 160px);
+        max-width: calc(50% + 160px);
+        margin-right: -160px;
+        padding-left: 0;
+        
+
+        div {
+            width: 100%;
+            height: 605px;
+            background-size: cover;
+            background-position: center;
+        }
+       
+    }
+
+  
 }
-
-
