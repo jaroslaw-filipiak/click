@@ -105,6 +105,10 @@
       &:hover {
         text-decoration: none;
       }
+      &:first-child {
+        margin-left: 0;
+      }
+     
     }
 
     &--schedule {
