@@ -16,6 +16,8 @@ $circleSize_desktop: 132px;
 }
 
 .contact-boxes {
+  position: relative;
+  z-index: 10;
 
   @include lg-min {
     margin-top: -112px;

@@ -137,7 +137,7 @@ if (have_rows('textboxes')) :
 
         <section>
             <div class="wrapper textboxes__repeater <?php echo $pt ?>" id="textboxes__<?php echo get_row_index() ?>">
-                <div class="container-fluid">
+                <div class="textboxes__container">
                     <div class="row row--textboxes  <?php echo get_row_index() % 2 == 0 ? 'd-flex flex-row-reverse' : 'd-flex' ?>">
                         <div class="col-12 d-flex flex-column align-items-start justify-content-center pb-40 <?php echo $offset ?> ">
                             <h4><?php echo $pre_title ?></h4>
@@ -146,7 +146,7 @@ if (have_rows('textboxes')) :
                             <a target="<?php echo esc_attr($button_target); ?>" href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_title); ?></a>
                         </div>
                         <div class="col-12 col-lg-6 textboxes__img-wrapper text-center <?php echo $align ?>">
-                            <img class="img-fluid" loading="lazy" src="<?php echo esc_url($photo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                            <img loading="lazy" src="<?php echo esc_url($photo['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                         </div>
                     </div>
                 </div>

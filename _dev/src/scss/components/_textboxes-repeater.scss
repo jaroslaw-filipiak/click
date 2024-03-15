@@ -1,9 +1,33 @@
 .textboxes {
 
+    &__container {
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        
+        @include lg {     
+            max-width: 960px;       
+        }
+        @include xl {
+            max-width: 1140px;
+        }
+        @include xxl-min {
+            max-width: 1320px;
+        }
+    }
+
     &__img-wrapper {
        
         @include xl-max {
             padding: 0px;
+        }
+
+        img {
+            max-width: initial !important;
+            @include lg-max {
+                min-width: 100vw;
+            }
+         
         }
     }
 
@@ -24,14 +48,7 @@
                 max-width: 1320px;
                 margin: 0 auto;
             }
-           
-            @media (min-width: 1800px){
-                max-width: 1440px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 16%;
-            }
+    
         }
         
         h1, h2, h3, h4  {
