@@ -219,9 +219,7 @@
     }
   
     &--contact {
-      // font-size: 26px;
-      font-size: clamp(0.938rem, 1.019vw + 0.708rem, 1.625rem);
-      line-height: clamp(1.406rem, 1.046vw + 1.171rem, 2.113rem);
+      font-size:26px;
       span {
         font-weight: 700;
       }

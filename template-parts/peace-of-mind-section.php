@@ -18,39 +18,38 @@ if ($bg) {
 }
 ?>
 
-<?php if (get_field('is_peace_of_mind_section_visible')) : ?>
-    <section>
-        <div class="wrapper peace-of-mind" id="peace-of-mind" style="background-image: url(<?php echo $bg ? $bg_url : $bg_default ?>);">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-12 col-lg-6 peace-of-mind__photo">
-                        <div style="background-image: url('<?php echo $img ? esc_url($img['url']) : $img_default ?>')">
-                        </div>
+
+<section>
+    <div class="wrapper peace-of-mind" id="peace-of-mind" style="background-image: url(<?php echo $bg ? $bg_url : $bg_default ?>);">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-lg-6 peace-of-mind__photo">
+                    <div style="background-image: url('<?php echo $img ? esc_url($img['url']) : $img_default ?>')">
                     </div>
-                    <div class="col-12 col-lg-6 peace-of-mind__content">
+                </div>
+                <div class="col-12 col-lg-6 peace-of-mind__content">
 
-                        <div><?php the_field('peace_of_mind_title'); ?></div>
+                    <div><?php the_field('peace_of_mind_title'); ?></div>
 
-                        <?php if (have_rows('peace_of_mind_list_items')) : ?>
+                    <?php if (have_rows('peace_of_mind_list_items')) : ?>
 
-                            <ul class="list-unstyled">
-                                <?php while (have_rows('peace_of_mind_list_items')) : the_row();
-                                    $item = get_sub_field('item');
-                                ?>
+                        <ul class="list-unstyled">
+                            <?php while (have_rows('peace_of_mind_list_items')) : the_row();
+                                $item = get_sub_field('item');
+                            ?>
 
-                                    <li>
-                                        <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/check-icon.webp" role="presentation">
-                                        <p><?php echo $item ?></p>
-                                    </li>
+                                <li>
+                                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/check-icon.webp" role="presentation">
+                                    <p><?php echo $item ?></p>
+                                </li>
 
-                                <?php endwhile; ?>
-                            </ul>
+                            <?php endwhile; ?>
+                        </ul>
 
-                        <?php endif; ?>
+                    <?php endif; ?>
 
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
-<?php endif; ?>
+    </div>
+</section>
