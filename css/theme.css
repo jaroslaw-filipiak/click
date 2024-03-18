@@ -605,15 +605,14 @@ button:focus {
   font-weight: 500;
 }
 .review-item .review p:first-of-type:before {
-  content: '„';
-  color: rgba(0, 0, 0, 0.05);
-  font-family: 'Montserrat';
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAArCAMAAAAT8RtjAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAORQTFRFAK3hAK3hAK3hAK3hAK3hAK3hAAAAAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hAK3hRkD34gAAAEx0Uk5TdvT/9ZECAOoe8CTrH4L7ywYEmf28xoYH3F697ELX8Q7Br3lk/i7jJ9oDoghxVyEgxwEFYFYU5Rmyd2/4Et4luaWoc8nQ7+6qF0DtrZvOl7EAAAEGSURBVHic7dTpUsIwAATgNKXpCYKCgKJyVBEFoRxe4IWc+v7v49haSDA7eQC6/zK7369MQohGpdFTBgtjpHT5QiPIUmpaEbZMtNAIaqjtRNix4STBCU5wgvcXg0+ZUteLsOeihU7Sph0nI1QH2QjnDt3N4khY5IlhOXEKQnXM/lL0NouSsCgTts0J35xW2P+c8YvzC4irORWuMYjrEiviBsT+pQpfNSG+bqnwzS3EbZkVcIch7N+psNuFuBeocL4P8UBqOewPGcL+SIXvHyDuyS2HHwOIn1Q488wQHk9U+OUV4jdgt/g92MUfcTVF+FO8DR43Z/PfF79YrhBel8I/4eu7GB5/AIaNMl/UYEorAAAAAElFTkSuQmCC');
   font-size: 140px;
   font-weight: 700;
   font-style: normal;
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: -30px;
+  opacity: .3;
 }
 .review-item .review p:last-child {
   margin-bottom: 0;

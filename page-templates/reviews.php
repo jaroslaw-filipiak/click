@@ -84,6 +84,7 @@ endif;
 								<strong>~ <span itemprop="name"><?php echo get_sub_field("customer"); ?></span></strong>
 								<?php echo get_sub_field("customer_info"); ?>
 							</div>
+
 						</div>
 					</div>
 
