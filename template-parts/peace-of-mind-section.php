@@ -8,16 +8,16 @@
  */
 
 $theme_uri = get_template_directory_uri();
-$img = get_field('peace_of_mind_image');
+$frontpage_id = get_option('page_on_front');
+$img = get_field('peace_of_mind_image', $frontpage_id);
 $img_default = $theme_uri . '/img/peace-of-mind-included-with-every-service.webp';
-$bg = get_field('peace_of_mind_bg');
+$bg = get_field('peace_of_mind_bg', $frontpage_id);
 $bg_default = $theme_uri . '/img/logo_bg_on_dark_blue.jpg';
 
 if ($bg) {
     $bg_url = $bg['url'];
 }
 ?>
-
 
 <section>
     <div class="wrapper peace-of-mind" id="peace-of-mind" style="background-image: url(<?php echo $bg ? $bg_url : $bg_default ?>);">
@@ -29,12 +29,12 @@ if ($bg) {
                 </div>
                 <div class="col-12 col-lg-6 peace-of-mind__content">
 
-                    <div><?php the_field('peace_of_mind_title'); ?></div>
+                    <div><?php the_field('peace_of_mind_title', $frontpage_id); ?></div>
 
-                    <?php if (have_rows('peace_of_mind_list_items')) : ?>
+                    <?php if (have_rows('peace_of_mind_list_items', $frontpage_id)) : ?>
 
                         <ul class="list-unstyled">
-                            <?php while (have_rows('peace_of_mind_list_items')) : the_row();
+                            <?php while (have_rows('peace_of_mind_list_items', $frontpage_id)) : the_row();
                                 $item = get_sub_field('item');
                             ?>
 
