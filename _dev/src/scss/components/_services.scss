@@ -211,9 +211,9 @@
         border-radius: 3px;
         width: 180px;
         height: 48px;
+        cursor: pointer;
 
-       
-
+    
         @include md {
           position: absolute;
           left: 50%;
@@ -246,6 +246,25 @@
       }
  
      
+    }
+  }
+}
+
+.page-template-portfolio-parent-page {
+
+  .services__items-wrapper {
+    align-items: stretch;
+    padding-top: 0;
+
+  }
+  .services-item {
+
+    &__body {
+     padding: 30px 55px 30px 55px;
+    }
+
+    h4 {
+      font-size: 22px;
     }
   }
 }
