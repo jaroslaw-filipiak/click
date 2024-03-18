@@ -8,11 +8,12 @@
  */
 
 $theme_uri = get_template_directory_uri();
+$reviews_page_id = 117;
 
 ?>
 
 <section>
-    <?php if (!is_page(117) && have_rows("reviews", 117)) : ?>
+    <?php if (!is_page($reviews_page_id) && have_rows("reviews", $reviews_page_id)) : ?>
 
     <div class="wrapper" style="background-image:url('<?php echo $theme_uri ?>/img/testimonials-bg.webp')" id="reviews"
         itemscope itemtype="https://schema.org/Product">
@@ -20,13 +21,13 @@ $theme_uri = get_template_directory_uri();
         <div class="container">
             <div class="row">
                 <div class="reviews__heading col-12 text-center">
-                    <h3><?php the_field('testimonials_pre_title'); ?></h3>
-                    <h2><?php the_field('testimoials_title'); ?></h2>
+                    <h3><?php the_field('testimonials_pre_title', $reviews_page_id); ?></h3>
+                    <h2><?php the_field('testimoials_title', $reviews_page_id); ?></h2>
                 </div>
             </div>
 
             <div class="row reviews">
-                <?php while (have_rows("reviews", 117)) : the_row(); ?>
+                <?php while (have_rows("reviews", $reviews_page_id)) : the_row(); ?>
                 <?php if (get_sub_field("homepage") && get_sub_field("homepage")[0] == 1) :
 
                             $heading_length = strlen(get_sub_field("heading"));
