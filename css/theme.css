@@ -662,6 +662,13 @@ button:focus {
   background-repeat: no-repeat;
   outline: none;
 }
+
+.entry-content .gallery .gallery-item a img {
+  width: 100%;
+  object-fit: cover;
+  height: initial !important;
+  aspect-ratio: 1 / 1;
+}
 .entry-content .gallery .gallery-item a:hover {
   text-decoration: none;
 }
