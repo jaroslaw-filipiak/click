@@ -31,31 +31,28 @@
   &__items-wrapper {
     padding-top: 32px;
     display: flex;
-    // align-items: stretch;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 
     @include xl-min {
       padding-top: 62px;
-      // align-items: stretch;
-      // display: flex;
-       justify-content: center;
+      align-items: stretch;
+      display: flex;
+      justify-content: center;
     }
   }
 
   &-item {
     border-radius: 6px;
-    -webkit-box-shadow: 0px 6px 32px 5px rgba(230, 241, 245, 1);
-    -moz-box-shadow: 0px 6px 32px 5px rgba(230, 241, 245, 1);
-    box-shadow: 0px 6px 32px 5px rgba(230, 241, 245, 1);
     transform: scale(1);
     transition: all 0.2s ease-in-out;
     min-width: calc(100% - 20px);
     flex: 1; 
     box-sizing: border-box;
-    // padding: 20px 0px;
     transition: all 0.2s ease-in-out;
+    padding:20px 0px;
 
     @include sm {
       min-width: calc(50% - 20px);
@@ -83,6 +80,13 @@
       width:342px;
       flex:none;
     }
+
+    &__inner {  
+       -webkit-box-shadow: 0px 6px 32px 5px rgba(230, 241, 245, 1);
+       -moz-box-shadow: 0px 6px 32px 5px rgba(230, 241, 245, 1);
+       box-shadow: 0px 6px 32px 5px rgba(230, 241, 245, 1);
+      
+    }
     &__header {
       height: 265px;
       background-size: cover;
@@ -91,6 +95,7 @@
       transition: all 0.2s ease-in-out;
       border-radius: 6px 6px 0px 0px;
       position: relative;
+      padding: 0;
      
     }
 
@@ -126,7 +131,7 @@
     }
 
     &__body {
-      padding: 100px 55px 50px 55px;
+      padding: 95px 55px 50px 55px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -184,10 +189,11 @@
    
 
       &--has-label {
-        margin-top: -8px;
-        @include lg-min {
-          margin-top: -8px;
+        .services-item__label {
+          position: relative;
+          top: 8px;
         }
+
       }
     }
 
@@ -225,6 +231,8 @@
     }
 
     &:hover {
+      text-decoration: none;
+       padding: 0px;
 
       .services-item__header {
         height: 285px;
@@ -237,10 +245,7 @@
         color: var(--main);
       }
  
-      text-decoration: none;
-      padding-bottom: 0;
-      padding-top: 0;
-
+     
     }
   }
 }
