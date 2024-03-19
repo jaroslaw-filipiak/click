@@ -1451,8 +1451,7 @@ body {
 }
 .contact-boxes .contact-box__content h4 {
   display: inline-block;
-  font-size: clamp(1.25rem, 0.536vw + 1.143rem, 1.625rem);
-  line-height: clamp(1.875rem, 0.339vw + 1.807rem, 2.113rem);
+  font-size: 26px;
   font-weight: 500;
   color: var(--darkblue);
   padding-bottom: 20px;
@@ -1470,13 +1469,12 @@ body {
 }
 .contact-boxes .contact-box--phone a {
   color: var(--main);
-  font-size: clamp(1.25rem, 1.339vw + 0.982rem, 2.188rem);
-  line-height: clamp(1.875rem, 1.384vw + 1.598rem, 2.844rem);
+  font-size: 35px;
+  text-underline-offset: 12px;
 }
 .contact-boxes .contact-box--email a {
   color: var(--darkblue);
-  font-size: clamp(1.25rem, 0vw + 1.25rem, 1.25rem);
-  line-height: clamp(1.625rem, -0.357vw + 1.946rem, 1.875rem);
+  font-size: 20px;
   text-decoration-color: var(--main);
   text-underline-offset: 8px;
 }
@@ -1485,8 +1483,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(1.125rem, 0vw + 1.125rem, 1.125rem);
-  line-height: clamp(1.463rem, -0.321vw + 1.752rem, 1.688rem);
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   background-color: var(--main);
@@ -3112,6 +3109,16 @@ body {
   }
   /*
   |--------------------------------------------------------------------------
+  | #hero on page contact
+  |--------------------------------------------------------------------------
+  */
+  .title--contact,
+  .subtitle--contact,
+  .pretitle--contact {
+    text-align: center;
+  }
+  /*
+  |--------------------------------------------------------------------------
   | #SERVICES max-width: 575px
   |--------------------------------------------------------------------------
   */
@@ -3416,6 +3423,26 @@ body {
     position: relative;
     left: -30px;
     margin-bottom: 0px;
+  }
+  /*
+  |--------------------------------------------------------------------------
+  | CONTACT PAGE contact-boxes max-width: 575px
+  |--------------------------------------------------------------------------
+  */
+  .contact-boxes {
+    margin-top: -210px;
+  }
+  .contact-boxes .contact-box--book-now a {
+    font-size: 16px;
+    height: 60px;
+  }
+  /*
+  |--------------------------------------------------------------------------
+  | CONTACT PAGE  contact-wrapper max-width: 575px
+  |--------------------------------------------------------------------------
+  */
+  #contact-wrapper .wrapper {
+    padding-bottom: 40px;
   }
   .wrapper {
     padding: 40px 30px;
