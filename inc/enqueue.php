@@ -25,6 +25,7 @@ if (!function_exists('click5_scripts')) {
 		wp_enqueue_style('click5-style', get_stylesheet_uri(), array(), $theme_version);
 
 		wp_enqueue_style('click5-dev', get_stylesheet_directory_uri() . '/dist/css/main.css', array(), $theme_version);
+		// wp_enqueue_style('click5-media', get_stylesheet_directory_uri() . '/dist/css/media.css', array(), $theme_version);
 
 		wp_enqueue_script('jquery');
 

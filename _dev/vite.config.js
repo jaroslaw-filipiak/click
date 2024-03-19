@@ -9,6 +9,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
+                media: resolve(__dirname, 'rwd.html'),
             },
             output: {
                 entryFileNames: `js/scripts.js`,

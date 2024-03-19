@@ -5,10 +5,9 @@
     margin-top: 60px;
   }
   h3 {
-    font-size: clamp(1.563rem, 0.833vw + 1.375rem, 2.125rem);
-    line-height: clamp(2.5rem, 0.389vw + 2.413rem, 2.763rem);
+    // font-size: clamp(1.563rem, 0.833vw + 1.375rem, 2.125rem);
+    // line-height: clamp(2.5rem, 0.389vw + 2.413rem, 2.763rem);
     font-weight: 300;
-   
 
     span {
       font-weight: 700;
@@ -26,8 +25,8 @@
     justify-content: center;
     margin: 10px 5px 0px 5px;
 
-    font-size: clamp(1rem, 0.185vw + 0.958rem, 1.125rem);
-    line-height: clamp(1.463rem, -0.204vw + 1.646rem, 1.6rem);
+    // font-size: clamp(1rem, 0.185vw + 0.958rem, 1.125rem);
+    // line-height: clamp(1.463rem, -0.204vw + 1.646rem, 1.6rem);
 
     &:hover {
       text-decoration: none;
@@ -53,7 +52,7 @@
 
     span {
       color: var(--main);
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
     &:hover {

@@ -46,7 +46,8 @@ if ($bg) {
                     <div class="col"></div>
                 </div>
             </div>
-            <img loading="lazy" class="services-area__img" src="<?php echo $bg ? $bg_url : $bg_default ?>"
-                alt="<?php echo $bg ?  $bg_alt : 'Image presenting our services area map' ?>">
+
         </div>
+        <img loading="lazy" class="services-area__img" src="<?php echo $bg ? $bg_url : $bg_default ?>"
+            alt="<?php echo $bg ?  $bg_alt : 'Image presenting our services area map' ?>">
 </section>
