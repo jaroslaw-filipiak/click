@@ -27,7 +27,7 @@ endif;
     <div class="container">
         <div class="row footer__top">
             <!-- logo -->
-            <div class="col-12 col-xl-auto mb-4 mb-xl-0 text-center">
+            <div class="col-12 col-xl-auto mb-4 mb-xl-0 text-center footer__logo">
                 <?php
                 if (!empty($logo_footer)) : ?>
                     <a href="<?php echo get_home_url() ?>"><img class="img-fluid" loading="lazy" src="<?php echo esc_url($logo_footer['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"></a>
@@ -59,7 +59,7 @@ endif;
             </div>
 
             <!-- buttons -->
-            <div class="col col-xl-auto d-flex flex-column  justify-content-center align-items-center align-items-xl-end">
+            <div class="col col-xl-auto d-flex flex-column  justify-content-center align-items-center align-items-xl-end footer__buttons-wrapper">
                 <a class="footer__learn-more" href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>"><?php echo $schedule_title ?></a>
                 <a class=" footer__call" href="call:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                     <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>

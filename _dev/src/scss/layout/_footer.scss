@@ -2,7 +2,6 @@
 
 #footer {
   background-color: #0d1643;
-  
 
   .get-directions {
     color: var(--main);
@@ -19,15 +18,19 @@
   }
 
   .footer {
-    &__top {
+    &__logo {
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 40px;
+      }
+    }
 
+    &__top {
       @include xl-min {
-        display: flex; 
+        display: flex;
         align-items: flex-start;
         justify-content: space-between;
       }
-      
-     
+
       p {
         color: #fff;
         margin: 0;
@@ -39,22 +42,25 @@
       margin: 40px 0px;
     }
 
-    &__address, 
+    &__address,
     &__hours {
       font-size: 17px;
 
       .footer__content {
-        padding-left: 35px;;
+        padding-left: 35px;
       }
-      
+    }
+
+    &__buttons-wrapper {
+      @media screen and (min-width: 992px) {
+        flex: 0 1 215px;
+      }
     }
 
     &__hours {
-      
       .footer__content {
         padding-left: 45px;
       }
-      
     }
 
     &__label {

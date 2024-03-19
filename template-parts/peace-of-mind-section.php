@@ -20,8 +20,7 @@ if ($bg) {
 ?>
 
 <section>
-    <div class="wrapper peace-of-mind" id="peace-of-mind"
-        style="background-image: url(<?php echo $bg ? $bg_url : $bg_default ?>);">
+    <div class="wrapper peace-of-mind" id="peace-of-mind" style="background-image: url(<?php echo $bg ? $bg_url : $bg_default ?>);">
         <div class="container">
             <div class="row flex-column-reverse flex-lg-row align-items-end">
                 <div class="col-12 col-lg-6 peace-of-mind__photo">
@@ -34,19 +33,18 @@ if ($bg) {
 
                     <?php if (have_rows('peace_of_mind_list_items', $frontpage_id)) : ?>
 
-                    <ul class="list-unstyled">
-                        <?php while (have_rows('peace_of_mind_list_items', $frontpage_id)) : the_row();
+                        <ul class="list-unstyled">
+                            <?php while (have_rows('peace_of_mind_list_items', $frontpage_id)) : the_row();
                                 $item = get_sub_field('item');
                             ?>
 
-                        <li>
-                            <img class="img-fluid" loading="lazy"
-                                src="<?php echo $theme_uri ?>/img/icons/check-icon.webp" role="presentation">
-                            <p><?php echo $item ?></p>
-                        </li>
+                                <li>
+                                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/check-icon.webp" role="presentation">
+                                    <p><?php echo $item ?></p>
+                                </li>
 
-                        <?php endwhile; ?>
-                    </ul>
+                            <?php endwhile; ?>
+                        </ul>
 
                     <?php endif; ?>
 
