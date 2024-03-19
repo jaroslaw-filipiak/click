@@ -1645,6 +1645,18 @@
   #contact-wrapper .wrapper {
     padding-bottom: 40px;
   }
+  /*
+  |--------------------------------------------------------------------------
+  | page-templates
+  |--------------------------------------------------------------------------
+  */
+  .page-template:not(.page-template-full) #page-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .page-template-reviews .review-item {
+    margin-bottom: 60px;
+  }
   .wrapper {
     padding: 40px 30px;
   }
