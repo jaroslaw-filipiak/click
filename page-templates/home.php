@@ -25,7 +25,8 @@ endif;
 
 <!-- hero -->
 <section>
-    <div class="wrapper d-flex align-items-end align-items-lg-center align-items-xl-end hero" id="hero" style="background-image: url('<?php echo click5_check_background(); ?>')">
+    <div class="wrapper d-flex align-items-end align-items-lg-center align-items-xl-end hero" id="hero"
+        style="background-image: url('<?php echo click5_check_background(); ?>')">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -36,7 +37,8 @@ endif;
             </div>
             <div class="row hero__buttons d-flex align-items-center">
                 <div class="col d-flex flex-column flex-sm-row align-items-center">
-                    <a target="<?php echo esc_attr($link_target); ?>" class="hero__buttons--schedule" href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
+                    <a target="<?php echo esc_attr($link_target); ?>" class="hero__buttons--schedule"
+                        href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
                     <a class="hero__buttons--call" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
                         <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                 </div>
@@ -70,25 +72,26 @@ endif;
                         $url = get_sub_field('url');
                 ?>
 
-                        <a href="<?php echo $url ?>" class="services-item">
-                            <div class="services-item__inner">
+                <a href="<?php echo $url ?>" class="services-item">
+                    <div class="services-item__inner">
 
-                                <div class="services-item__header" style="background-image: url('<?php echo $bg ?>')">
-                                    <div class="services-item__icon">
-                                        <img class="img-fluid" loading="lazy" src="<?php echo $icon; ?>" role="presentation">
-                                    </div>
-                                </div>
-                                <div class="<?php echo $label ? 'services-item__body services-item__body--has-label' : 'services-item__body' ?>">
-
-                                    <p class="services-item__label"><?php echo $label ? $label : '&nbsp;' ?></h4>
-
-                                    <h4><?php echo $title ?></h4>
-                                    <p class="roboto-light"><?php echo $excerpt ?></p>
-                                    <button class="services-item__btn" href="<?php echo $url ?>">Learn More</button>
-                                </div>
+                        <div class="services-item__header" style="background-image: url('<?php echo $bg ?>')">
+                            <div class="services-item__icon">
+                                <img class="img-fluid" loading="lazy" src="<?php echo $icon; ?>" role="presentation">
                             </div>
+                        </div>
+                        <div
+                            class="<?php echo $label ? 'services-item__body services-item__body--has-label' : 'services-item__body' ?>">
 
-                        </a>
+                            <p class="services-item__label"><?php echo $label ? $label : '&nbsp;' ?></h4>
+
+                            <h4><?php echo $title ?></h4>
+                            <p class="roboto-light"><?php echo $excerpt ?></p>
+                            <button class="services-item__btn" href="<?php echo $url ?>">Learn More</button>
+                        </div>
+                    </div>
+
+                </a>
 
                 <?php endwhile;
 
@@ -100,12 +103,13 @@ endif;
             </div>
             <div class="row cta" id="cta">
                 <div class="col-12 text-center">
-                    <?php echo get_field("cta_heading", "option"); ?>
+                    <?php echo get_field("cta_heading"); ?>
                 </div>
                 <div class="col d-flex flex-column-reverse flex-md-row align-items-center justify-content-center mt-2">
                     <?php $link = get_field('schedule_service', 'option'); ?>
 
-                    <a class="cta--schedule-btn" target="<?php echo esc_attr($link_target); ?>" href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
+                    <a class="cta--schedule-btn" target="<?php echo esc_attr($link_target); ?>"
+                        href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
                     <a class="cta--call-btn" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                         <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                 </div>
@@ -135,23 +139,24 @@ if (have_rows('textboxes')) :
         endif; ?>
 
 
-        <section>
-            <div class="wrapper textboxes" id="textboxes__<?php echo get_row_index() ?>">
-                <div class="container">
-                    <div class="row align-items-end">
-                        <div class="col-12 col-lg-6 textboxes__content">
-                            <h4><?php echo $pre_title ?></h4>
-                            <h3><?php echo $title ?></h3>
-                            <div class="roboto-light"><?php echo $text ?></div>
-                            <a target="<?php echo esc_attr($button_target); ?>" href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_title); ?></a>
-                        </div>
-                        <div class="col-12 col-lg-6 textboxes__photo">
-                            <div style="background-image: url(<?php echo esc_url($photo['url']); ?>)"></div>
-                        </div>
-                    </div>
+<section>
+    <div class="wrapper textboxes" id="textboxes__<?php echo get_row_index() ?>">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-lg-6 textboxes__content">
+                    <h4><?php echo $pre_title ?></h4>
+                    <h3><?php echo $title ?></h3>
+                    <div class="roboto-light"><?php echo $text ?></div>
+                    <a target="<?php echo esc_attr($button_target); ?>"
+                        href="<?php echo esc_url($button_url); ?>"><?php echo esc_html($button_title); ?></a>
+                </div>
+                <div class="col-12 col-lg-6 textboxes__photo">
+                    <div style="background-image: url(<?php echo esc_url($photo['url']); ?>)"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
 <?php
     endwhile;
@@ -183,7 +188,8 @@ endif; ?>
                         </p>
                         <?php $ftl_link = get_field('ftl_link'); ?>
                         <?php if ($ftl_link) : ?>
-                            <a href="<?php echo esc_url($ftl_link['url']); ?>" target="<?php echo esc_attr($ftl_link['target']); ?>"><?php echo esc_html($ftl_link['title']); ?></a>
+                        <a href="<?php echo esc_url($ftl_link['url']); ?>"
+                            target="<?php echo esc_attr($ftl_link['target']); ?>"><?php echo esc_html($ftl_link['title']); ?></a>
                         <?php endif; ?>
                     </div>
                 </div>

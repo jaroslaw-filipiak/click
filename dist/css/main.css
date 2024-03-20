@@ -717,15 +717,22 @@ body {
     color: var(--main);
   }
 }
-.page-template-portfolio-parent-page .services__items-wrapper {
+.page-template-portfolio-parent-page #services .container-fluid,
+.page-template-service-parent-page #services .container-fluid {
+  max-width: 1470px;
+}
+.page-template-portfolio-parent-page .services__items-wrapper,
+.page-template-service-parent-page .services__items-wrapper {
   align-items: stretch;
   padding-top: 0;
 }
-.page-template-portfolio-parent-page .services-item__body {
-  padding: 30px 55px 30px 55px;
+.page-template-portfolio-parent-page .services-item__body,
+.page-template-service-parent-page .services-item__body {
+  padding: 50px 55px;
 }
-.page-template-portfolio-parent-page .services-item h4 {
-  font-size: 22px;
+.page-template-portfolio-parent-page .services-item__body h4,
+.page-template-service-parent-page .services-item__body h4 {
+  font-size: 24px;
 }
 .services-area {
   background-color: #eef7f7;

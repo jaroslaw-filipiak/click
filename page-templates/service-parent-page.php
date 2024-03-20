@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name:  Portfolio parent page
+ * Template Name:  Service parent page
  *
  * @package click5
  */
@@ -34,26 +34,23 @@ endif;
 
 <!-- hero -->
 <section>
-    <div class="wrapper d-flex align-items-end"
-        style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
+    <div class="wrapper d-flex align-items-end" style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
         <div class="container">
             <div class="row ">
                 <div class="<?php echo $has_subtitle ? 'content content--has-subtitle' : 'content'  ?> col-12 col-xl-9">
                     <h1><?php the_title(); ?></h1>
 
                     <?php if ($has_subtitle) : ?>
-                    <h2 class="subtitle">
-                        <?php echo the_field('page_subheading'); ?>
-                    </h2>
+                        <h2 class="subtitle">
+                            <?php echo the_field('page_subheading'); ?>
+                        </h2>
 
                     <?php endif; ?>
 
                     <div class="row hero__buttons d-flex align-items-center">
                         <div class="col d-flex flex-column flex-sm-row align-items-center">
-                            <a target="<?php echo esc_attr($schedule_target); ?>" class="hero__buttons--schedule"
-                                href="<?php echo esc_url($schedule_url); ?>"><?php echo $schedule_title ?></a>
-                            <a class="hero__buttons--call"
-                                href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
+                            <a target="<?php echo esc_attr($schedule_target); ?>" class="hero__buttons--schedule" href="<?php echo esc_url($schedule_url); ?>"><?php echo $schedule_title ?></a>
+                            <a class="hero__buttons--call" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call
                                 <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                         </div>
                     </div>
@@ -66,15 +63,15 @@ endif;
 <!-- services + cta -->
 <section>
     <div class="wrapper services" id="services">
-        <div class="container-fluid mx-auto p-lg-0">
+        <div class="container-fluid mx-auto">
             <div class="mx-auto services__items-wrapper">
 
                 <?php
-                $portfolio_parent_id = get_the_ID();
+                $services_parent_id = get_the_ID();
 
                 $args = array(
                     'post_type' => 'page',
-                    'post_parent' => $portfolio_parent_id,
+                    'post_parent' => $services_parent_id,
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
                     'posts_per_page' => -1
@@ -89,17 +86,17 @@ endif;
                         $link = get_the_permalink();
                 ?>
 
-                <!-- loop -->
-                <a href="<?php echo $link ?>" class="services-item">
-                    <div class="services-item__inner">
-                        <div class="services-item__header" style="background-image: url('<?php echo $bg_url ?>')"></div>
-                        <div class="services-item__body">
-                            <h4><?php the_title() ?></h4>
-                            <button class="services-item__btn" href="<?php echo $link ?>">More</button>
-                        </div>
-                    </div>
-                </a>
-                <!-- loop -->
+                        <!-- loop -->
+                        <a href="<?php echo $link ?>" class="services-item">
+                            <div class="services-item__inner">
+                                <div class="services-item__header" style="background-image: url('<?php echo $bg_url ?>')"></div>
+                                <div class="services-item__body">
+                                    <h4><?php the_title() ?></h4>
+                                    <button class="services-item__btn" href="<?php echo $link ?>">More</button>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- loop -->
 
                 <?php endwhile;
                     wp_reset_postdata();
@@ -114,8 +111,7 @@ endif;
                 <div class="col d-flex flex-column-reverse flex-md-row align-items-center justify-content-center mt-2">
                     <?php $link = get_field('schedule_service', 'option'); ?>
 
-                    <a class="cta--schedule-btn" target="<?php echo esc_attr($link_target); ?>"
-                        href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
+                    <a class="cta--schedule-btn" target="<?php echo esc_attr($link_target); ?>" href="<?php echo esc_url($link_url); ?>"><?php echo esc_html($link_title); ?></a>
                     <a class="cta--call-btn" href="tel:<?php echo get_field("c5ts_phone", "option"); ?>">Call&nbsp;
                         <span><?php echo get_field("c5ts_phone", "option"); ?></span></a>
                 </div>

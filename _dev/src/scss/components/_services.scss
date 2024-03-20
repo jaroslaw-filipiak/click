@@ -246,18 +246,22 @@
   }
 }
 
-.page-template-portfolio-parent-page {
+.page-template-portfolio-parent-page,
+.page-template-service-parent-page {
+  #services {
+    .container-fluid {
+      max-width: 1470px;
+    }
+  }
   .services__items-wrapper {
     align-items: stretch;
     padding-top: 0;
   }
-  .services-item {
-    &__body {
-      padding: 30px 55px 30px 55px;
-    }
+  .services-item__body {
+    padding: 50px 55px;
 
     h4 {
-      font-size: 22px;
+      font-size: 24px;
     }
   }
 }

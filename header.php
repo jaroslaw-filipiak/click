@@ -10,8 +10,10 @@ if (!defined('ABSPATH')) {
 
 $theme_uri = get_template_directory_uri();
 $logo = get_field('logo', 'options');
+
 $schedule = get_field('schedule_service', 'option');
 $quote = get_field('get_a_free_quote', 'option');
+
 if ($schedule) :
     $schedule_url = $schedule['url'];
     $schedule_title = $schedule['title'];
