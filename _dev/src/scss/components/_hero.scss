@@ -194,13 +194,11 @@
     line-height: 35px;
   }
 
-  // .content:not(.content--has-subtitle) {
-
-  //   h1 {
-  //     margin-bottom: 46px;
-  //   }
-
-  // }
+  .content:not(.content--has-subtitle) {
+    h1 {
+      margin-bottom: 46px;
+    }
+  }
 
   .subtitle {
     font-size: 23px;

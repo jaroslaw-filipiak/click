@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
 
-  @include lg-min {
+  @include xl-min {
     margin-top: 50px;
   }
 
@@ -39,11 +39,6 @@
       position: absolute;
       right: 0;
       top: 0;
-    }
-
-    @include xl {
-      transform: scale(0.75) !important;
-      transform-origin: top right;
     }
 
     @include xxl-min {

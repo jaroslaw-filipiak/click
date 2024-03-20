@@ -141,9 +141,6 @@
   | .TEXTBOXES REPEATER HOMEPAGE
   |--------------------------------------------------------------------------
   */
-  .textboxes {
-    padding: 40px 0px 0px 0px !important;
-  }
   .textboxes .container {
     width: 100%;
     max-width: 100%;
@@ -165,31 +162,11 @@
     font-size: 15px;
     height: 46px;
   }
-  .textboxes__content {
-    padding: 0px 45px 25px 45px;
-  }
-  .textboxes__photo {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .textboxes__photo div {
-    width: 100%;
-    height: 550px;
-    background-size: cover;
-    background-position: center;
-  }
   /*
   |--------------------------------------------------------------------------
   | #PEACE OF MIND 
   |--------------------------------------------------------------------------
   */
-  .peace-of-mind {
-    padding: 0px !important;
-  }
   .peace-of-mind .container {
     width: 100%;
     max-width: 100%;
@@ -209,21 +186,9 @@
     font-size: 18px;
   }
   .peace-of-mind__content {
-    padding: 0px 45px 25px 45px;
-  }
-  .peace-of-mind__photo {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .peace-of-mind__photo div {
-    width: 100%;
-    height: 550px;
-    background-size: cover;
-    background-position: center;
+    padding-left: 44px;
+    padding-right: 40px;
+    padding-bottom: 81px;
   }
   /*
   |--------------------------------------------------------------------------
@@ -373,9 +338,6 @@
   | CONTACT PAGE contact-boxes
   |--------------------------------------------------------------------------
   */
-  .contact-boxes {
-    margin-top: -210px;
-  }
   .contact-boxes .contact-box--book-now a {
     font-size: 16px;
     height: 60px;
@@ -1149,7 +1111,7 @@
   |--------------------------------------------------------------------------
   */
   .contact-boxes {
-    margin-top: -210px;
+    margin-top: -110px;
   }
   .contact-boxes .contact-box--book-now a {
     font-size: 16px;
@@ -1875,7 +1837,7 @@
   |--------------------------------------------------------------------------
   */
   .contact-boxes {
-    margin-top: -210px;
+    margin-top: -110px;
   }
   .contact-boxes .contact-box--book-now a {
     font-size: 16px;
@@ -2253,6 +2215,27 @@
   }
   .contact-map iframe {
     height: 400px;
+  }
+  .entry-content > h1:first-child,
+  .entry-content > h2:first-child,
+  .entry-content > h3:first-child,
+  .entry-content > h4:first-child,
+  .entry-content > h5:first-child,
+  .entry-content > h6:first-child {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .entry-content > h1:first-child img,
+  .entry-content > h2:first-child img,
+  .entry-content > h3:first-child img,
+  .entry-content > h4:first-child img,
+  .entry-content > h5:first-child img,
+  .entry-content > h6:first-child img {
+    margin-left: 0;
   }
 }
 @media (max-width: 575px) {

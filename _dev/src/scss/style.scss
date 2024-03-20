@@ -36,7 +36,6 @@
   --lightblue: #1a265c;
   --lightBG: #ecf4f7;
   --accent: #facb10;
-  
 }
 
 .text-accent {
@@ -807,7 +806,7 @@ h1.post-title::after {
   margin: 0;
   @include xxl-min {
     padding: 28px 0 27px 40px;
-  } 
+  }
 }
 .widget-links ul {
   padding: 0;
