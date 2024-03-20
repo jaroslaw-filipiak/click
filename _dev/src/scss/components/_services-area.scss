@@ -41,9 +41,14 @@
       top: 0;
     }
 
+    @include xl {
+      height: 722px;
+      right: -300px;
+    }
+
     @include xxl-min {
       top: 0 !important;
-      right: 0 !important;
+      right: -150px !important;
     }
   }
 

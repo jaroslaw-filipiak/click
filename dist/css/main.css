@@ -1,5 +1,96 @@
 @charset "UTF-8";@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
 
+@media (min-width: 0px) and (max-width: 575px) {
+  body:after {
+    content: "xs 0 - 575px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body:after {
+    content: "sm - 576px - 767px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body:after {
+    content: "md - 768px - 991px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body:after {
+    content: "lg - 992px - 1199px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  body:after {
+    content: "xl - 1200px - 1339px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1799px) {
+  body:after {
+    content: "xxl - 1440px - 1919px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 1800px) {
+  body:after {
+    content: "xxxl  > 1920px ";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -780,10 +871,16 @@ body {
     top: 0;
   }
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .services-area__img {
+    height: 722px;
+    right: -300px;
+  }
+}
 @media (min-width: 1440px) {
   .services-area__img {
     top: 0 !important;
-    right: 0 !important;
+    right: -150px !important;
   }
 }
 .services-area h1,
@@ -1280,11 +1377,12 @@ body {
 @media (min-width: 992px) {
   #cta,
   .cta {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 #cta h3,
 .cta h3 {
+  font-size: 34px;
   font-weight: 300;
 }
 #cta h3 span,
@@ -1302,6 +1400,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 10px 5px 0px 5px;
+  font-size: 18px;
 }
 #cta--schedule-btn:hover, #cta--call-btn:hover,
 .cta--schedule-btn:hover,
@@ -1676,6 +1775,7 @@ body {
 }
 #footer .footer__address .footer__content, #footer .footer__hours .footer__content {
   padding-left: 35px;
+  opacity: 0.8;
 }
 @media screen and (min-width: 992px) {
   #footer .footer__buttons-wrapper {
