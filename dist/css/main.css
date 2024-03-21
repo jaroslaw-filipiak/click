@@ -1,5 +1,96 @@
 @charset "UTF-8";@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
 
+@media (min-width: 0px) and (max-width: 575px) {
+  body:after {
+    content: "xs 0 - 575px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  body:after {
+    content: "sm - 576px - 767px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body:after {
+    content: "md - 768px - 991px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body:after {
+    content: "lg - 992px - 1199px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  body:after {
+    content: "xl - 1200px - 1339px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1799px) {
+  body:after {
+    content: "xxl - 1440px - 1919px";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
+@media (min-width: 1800px) {
+  body:after {
+    content: "xxxl  > 1920px ";
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    z-index: 999999999999;
+  }
+}
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -195,7 +286,7 @@ body {
 #header .cta__buttons {
   gap: 8px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1540px) {
   #header .quote {
     display: none;
   }
@@ -293,7 +384,7 @@ body {
   color: #fff;
   text-align: center;
   font-size: 26px;
-  line-height: 60px;
+  line-height: 32px;
 }
 @media (min-width: 992px) {
   .hero h4 {
