@@ -3,8 +3,10 @@
   position: relative;
   overflow: hidden;
 
-  @include xl-min {
-    margin-top: 50px;
+  &:not(.services-area__contact) {
+    @include xl-min {
+      margin-top: 50px;
+    }
   }
 
   @include lg-max {

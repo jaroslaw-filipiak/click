@@ -23,8 +23,7 @@ endif;
 
 <!-- hero -->
 <section>
-    <div class="wrapper d-flex align-items-center"
-        style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
+    <div class="wrapper d-flex align-items-center" style="background-image: url('<?php echo click5_check_background(); ?>');" id="hero-sub">
         <div class="container">
             <div class="row">
                 <div class="content col-12">
@@ -43,41 +42,72 @@ endif;
     <div class="container contact-boxes">
         <div class="row">
             <!-- Phone -->
-            <div class="col contact-box contact-box--phone">
-                <div class="contact-box__icon">
-                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-phone.webp"
-                        role="presentation">
-                </div>
-                <div class="contact-box__content">
-                    <h4>Phone</h4>
-                    <a href="tel:224-539-6895"
-                        class="roboto-regular"><?php echo get_field("c5ts_phone", "option"); ?></span></a>
-                </div>
-            </div>
+            <?php if (have_rows('contact_box_group_phone')) : ?>
+                <?php while (have_rows('contact_box_group_phone')) : the_row(); ?>
+                    <?php $icon = get_sub_field('icon'); ?>
+
+                    <div class="col contact-box contact-box--phone">
+                        <div class="contact-box__icon">
+                            <img class="img-fluid" loading="lazy" src="<?php echo esc_url($icon['url']); ?>" role="presentation">
+                        </div>
+                        <div class="contact-box__content">
+                            <h4> <?php the_sub_field('title'); ?></h4>
+                            <a href="tel:  <?php the_sub_field('phone'); ?>" class="roboto-regular">
+                                <?php the_sub_field('phone'); ?></span></a>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+
             <!-- Email -->
-            <div class="col contact-box contact-box--email">
-                <div class="contact-box__icon">
-                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-envelope.webp"
-                        role="presentation">
-                </div>
-                <div class="contact-box__content">
-                    <h4>Email</h4>
-                    <a class="roboto-regular"
-                        href="mailto:<?php echo get_field("c5ts_email", "option"); ?>"><?php echo get_field("c5ts_email", "option"); ?></span></a>
-                </div>
-            </div>
+
+            <?php if (have_rows('contact_box_group_email')) : ?>
+                <?php while (have_rows('contact_box_group_email')) : the_row(); ?>
+                    <?php $icon_email = get_sub_field('icon_email'); ?>
+
+                    <div class="col contact-box contact-box--email">
+                        <div class="contact-box__icon">
+                            <img class="img-fluid" loading="lazy" src="<?php echo esc_url($icon_email['url']); ?>" role="presentation">
+                        </div>
+                        <div class="contact-box__content">
+                            <h4> <?php the_sub_field('title_email'); ?></h4>
+                            <a class="roboto-regular" href="mailto  <?php the_sub_field('email'); ?>">
+                                <?php the_sub_field('email'); ?></span></a>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+
             <!-- Book Now -->
-            <div href="tel:224-539-6895" class="col contact-box contact-box--book-now">
-                <div class="contact-box__icon">
-                    <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-pointer.webp"
-                        role="presentation">
-                </div>
-                <div class="contact-box__content">
-                    <h4>Book Now</h4>
-                    <a href="<?php echo esc_url($schedule_url); ?>" target="<?php echo esc_attr($schedule_target); ?>">
-                        <?php echo $schedule_title ?></a>
-                </div>
-            </div>
+
+            <?php if (have_rows('contact_box_group_book_now')) : ?>
+                <?php while (have_rows('contact_box_group_book_now')) : the_row(); ?>
+                    <?php $icon_book_now = get_sub_field('icon_book_now'); ?>
+
+                    <div href="tel:224-539-6895" class="col contact-box contact-box--book-now">
+                        <div class="contact-box__icon">
+                            <?php if ($icon_book_now) : ?>
+                                <img class="img-fluid" loading="lazy" src="<?php echo $theme_uri ?>/img/icons/icon-pointer.webp" role="presentation">
+                            <?php endif; ?>
+                        </div>
+                        <div class="contact-box__content">
+                            <h4> <?php the_sub_field('title_book_now'); ?></h4>
+
+                            <?php $button = get_sub_field('button'); ?>
+                            <?php if ($button) : ?>
+                                <a href="<?php echo esc_url($button['url']); ?>" target="<?php echo esc_attr($button['target']); ?>">
+                                    <?php echo esc_html($button['title']); ?></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+            <?php endif; ?>
+
         </div>
     </div>
 </section>

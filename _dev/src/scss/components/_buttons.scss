@@ -1,5 +1,5 @@
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 17px;
@@ -10,6 +10,8 @@
 
   &:hover {
     text-decoration: none;
+    background-color: var(--main);
+    color: #fff;
   }
 
   // subpage #hero-sub buttons
@@ -42,6 +44,12 @@
       span {
         color: #fff;
       }
+    }
+  }
+
+  &-secondary {
+    &:hover {
+      border-color: var(--main);
     }
   }
 }

@@ -7,6 +7,8 @@
   h3 {
     font-size: 34px;
     font-weight: 300;
+    padding-bottom: 5px;
+    color: #1a265c;
 
     span {
       font-weight: 700;
@@ -27,6 +29,10 @@
 
     &:hover {
       text-decoration: none;
+    }
+
+    @include lg-min {
+      margin-top: 0px;
     }
   }
 
@@ -60,6 +66,13 @@
       span {
         color: #fff;
       }
+    }
+  }
+
+  &--page {
+    @include lg-min {
+      padding-top: 20px;
+      padding-bottom: 10px;
     }
   }
 }

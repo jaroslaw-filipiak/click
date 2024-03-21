@@ -29,7 +29,8 @@ endif;
 				<div class="col-12">
 
 					<h1>404</h1>
-					<h4>Page not found</h4>
+					<h4>Apologies, but the page you requested could not be found.<br />
+						Perhaps sitemap will help.</h4>
 				</div>
 			</div>
 			<div class="row hero__buttons d-flex align-items-center">
