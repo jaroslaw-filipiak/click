@@ -1833,6 +1833,11 @@ body {
   font-size: 14px;
   color: var(--main);
 }
+@media (min-width: 992px) {
+  #footer .footer__label img {
+    height: 28px;
+  }
+}
 #footer .footer__learn-more, #footer .footer__call {
   margin-top: 10px;
   display: inline-flex;

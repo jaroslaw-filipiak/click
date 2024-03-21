@@ -82,6 +82,12 @@
         font-size: 14px;
         color: var(--main);
       }
+
+      img {
+        @include lg-min {
+          height: 28px;
+        }
+      }
     }
 
     &__learn-more,
